@@ -12,7 +12,7 @@ import FirebaseDatabase
 class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: Any) {
-        UIViewController.MobileHospital.VC1.show()
+        UIViewController.MobileHospital.ViewController2.show()
     }
     
     override func viewDidLoad() {

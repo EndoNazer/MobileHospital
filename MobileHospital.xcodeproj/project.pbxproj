@@ -3,18 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0981B74D0D3DF8FB16C1924B /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */; };
+		0990E3975E708998751A9786 /* Pods_MobileHospitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */; };
+		A503552B238575A700FDAE12 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5035529238575A600FDAE12 /* UIViewController.swift */; };
+		A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503552A238575A700FDAE12 /* UIStoryboard.swift */; };
+		A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503552D23869C1E00FDAE12 /* GlobalRouter.swift */; };
+		A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503552E23869C1E00FDAE12 /* MainScreenRouter.swift */; };
+		A503553323869D1600FDAE12 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553223869D1600FDAE12 /* SessionData.swift */; };
+		A503553523869D4500FDAE12 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553423869D4500FDAE12 /* SharedData.swift */; };
+		A503553723869F3F00FDAE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553623869F3F00FDAE12 /* ViewController.swift */; };
+		A503553923869FCB00FDAE12 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553823869FCB00FDAE12 /* ViewController2.swift */; };
+		A503553D2386A24A00FDAE12 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553A2386A24A00FDAE12 /* MainController.swift */; };
+		A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553B2386A24A00FDAE12 /* MainPresenter.swift */; };
+		A503553F2386A24A00FDAE12 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553C2386A24A00FDAE12 /* MainView.swift */; };
+		A50355472386A31500FDAE12 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355452386A31500FDAE12 /* BasePresenter.swift */; };
+		A50355482386A31500FDAE12 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355462386A31500FDAE12 /* BaseView.swift */; };
+		A503554B2386A40C00FDAE12 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503554A2386A40C00FDAE12 /* UseCase.swift */; };
+		A503554D2386A43500FDAE12 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503554C2386A43500FDAE12 /* Response.swift */; };
+		A503554F2386A47100FDAE12 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503554E2386A47100FDAE12 /* Errors.swift */; };
+		A50355512386A4E300FDAE12 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355502386A4E300FDAE12 /* EventBus.swift */; };
+		A50355532386A4F400FDAE12 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355522386A4F400FDAE12 /* Events.swift */; };
+		A50355552386A58100FDAE12 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355542386A58100FDAE12 /* Models.swift */; };
+		A50355582386A63900FDAE12 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355572386A63900FDAE12 /* Date.swift */; };
+		A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503555A2386A6D900FDAE12 /* PreloaderView.swift */; };
 		A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79C2383DF4A003BCF7E /* AppDelegate.swift */; };
 		A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */; };
-		A580B7A12383DF4A003BCF7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B7A02383DF4A003BCF7E /* ViewController.swift */; };
 		A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580B7A22383DF4A003BCF7E /* Main.storyboard */; };
 		A580B7A62383DF4F003BCF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A580B7A52383DF4F003BCF7E /* Assets.xcassets */; };
 		A580B7A92383DF4F003BCF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580B7A72383DF4F003BCF7E /* LaunchScreen.storyboard */; };
 		A580B7B42383DF4F003BCF7E /* MobileHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B7B32383DF4F003BCF7E /* MobileHospitalTests.swift */; };
 		A580B7BF2383DF4F003BCF7E /* MobileHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B7BE2383DF4F003BCF7E /* MobileHospitalUITests.swift */; };
+		A580B7CD2383DFC7003BCF7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A580B7CC2383DFC7003BCF7E /* GoogleService-Info.plist */; };
+		B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +59,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.debug.xcconfig"; sourceTree = "<group>"; };
+		1AFD079DE5A8A4A2D4F81D88 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.release.xcconfig"; sourceTree = "<group>"; };
+		8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5035529238575A600FDAE12 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = SOURCE_ROOT; };
+		A503552A238575A700FDAE12 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = SOURCE_ROOT; };
+		A503552D23869C1E00FDAE12 /* GlobalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
+		A503552E23869C1E00FDAE12 /* MainScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		A503553223869D1600FDAE12 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
+		A503553423869D4500FDAE12 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		A503553623869F3F00FDAE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A503553823869FCB00FDAE12 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		A503553A2386A24A00FDAE12 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		A503553B2386A24A00FDAE12 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		A503553C2386A24A00FDAE12 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A50355452386A31500FDAE12 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		A50355462386A31500FDAE12 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A503554A2386A40C00FDAE12 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		A503554C2386A43500FDAE12 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		A503554E2386A47100FDAE12 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		A50355502386A4E300FDAE12 /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		A50355522386A4F400FDAE12 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		A50355542386A58100FDAE12 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A50355572386A63900FDAE12 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A503555A2386A6D900FDAE12 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
 		A580B7992383DF4A003BCF7E /* MobileHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580B79C2383DF4A003BCF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A580B7A02383DF4A003BCF7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A580B7A32383DF4A003BCF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A580B7A52383DF4F003BCF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A580B7A82383DF4F003BCF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +99,10 @@
 		A580B7BA2383DF4F003BCF7E /* MobileHospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileHospitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580B7BE2383DF4F003BCF7E /* MobileHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileHospitalUITests.swift; sourceTree = "<group>"; };
 		A580B7C02383DF4F003BCF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A580B7CC2383DFC7003BCF7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0990E3975E708998751A9786 /* Pods_MobileHospitalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +126,173 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0981B74D0D3DF8FB16C1924B /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CCF14C98FBC27CFF65EFD3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */,
+				34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */,
+				8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */,
+				1AFD079DE5A8A4A2D4F81D88 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */,
+				AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */,
+				8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		568BCC05BBC3855C3982A6C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */,
+				B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */,
+				C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A503551F2385736E00FDAE12 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A50355202385739200FDAE12 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A50355542386A58100FDAE12 /* Models.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A5035521238573A400FDAE12 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A5035522238573CC00FDAE12 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A503553123869D0800FDAE12 /* Repository */,
+				A503552A238575A700FDAE12 /* UIStoryboard.swift */,
+				A5035529238575A600FDAE12 /* UIViewController.swift */,
+				A50355282385753F00FDAE12 /* Router */,
+				A50355272385752900FDAE12 /* EventBus */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A5035523238573FE00FDAE12 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A5035525238574A200FDAE12 /* Common */,
+				A580B7A22383DF4A003BCF7E /* Main.storyboard */,
+				A580B7A72383DF4F003BCF7E /* LaunchScreen.storyboard */,
+				A5035526238574B300FDAE12 /* Main */,
+				A50355402386A25A00FDAE12 /* Test */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A5035525238574A200FDAE12 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A50355592386A6C800FDAE12 /* View */,
+				A50355442386A31500FDAE12 /* MVP */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5035526238574B300FDAE12 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A503553A2386A24A00FDAE12 /* MainController.swift */,
+				A503553B2386A24A00FDAE12 /* MainPresenter.swift */,
+				A503553C2386A24A00FDAE12 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A50355272385752900FDAE12 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				A50355502386A4E300FDAE12 /* EventBus.swift */,
+				A50355522386A4F400FDAE12 /* Events.swift */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		A50355282385753F00FDAE12 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A503552D23869C1E00FDAE12 /* GlobalRouter.swift */,
+				A503552E23869C1E00FDAE12 /* MainScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A503553123869D0800FDAE12 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A503553223869D1600FDAE12 /* SessionData.swift */,
+				A503553423869D4500FDAE12 /* SharedData.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A50355402386A25A00FDAE12 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A503553623869F3F00FDAE12 /* ViewController.swift */,
+				A503553823869FCB00FDAE12 /* ViewController2.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A50355442386A31500FDAE12 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				A50355452386A31500FDAE12 /* BasePresenter.swift */,
+				A50355462386A31500FDAE12 /* BaseView.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		A50355492386A3FA00FDAE12 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A5035521238573A400FDAE12 /* Interactors */,
+				A503554A2386A40C00FDAE12 /* UseCase.swift */,
+				A503554C2386A43500FDAE12 /* Response.swift */,
+				A503554E2386A47100FDAE12 /* Errors.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A50355562386A62C00FDAE12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A50355572386A63900FDAE12 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A50355592386A6C800FDAE12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A503555A2386A6D900FDAE12 /* PreloaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A580B7902383DF49003BCF7E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +300,8 @@
 				A580B7B22383DF4F003BCF7E /* MobileHospitalTests */,
 				A580B7BD2383DF4F003BCF7E /* MobileHospitalUITests */,
 				A580B79A2383DF4A003BCF7E /* Products */,
+				2CCF14C98FBC27CFF65EFD3E /* Pods */,
+				568BCC05BBC3855C3982A6C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +318,17 @@
 		A580B79B2383DF4A003BCF7E /* MobileHospital */ = {
 			isa = PBXGroup;
 			children = (
+				A580B7CC2383DFC7003BCF7E /* GoogleService-Info.plist */,
 				A580B79C2383DF4A003BCF7E /* AppDelegate.swift */,
 				A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */,
-				A580B7A02383DF4A003BCF7E /* ViewController.swift */,
-				A580B7A22383DF4A003BCF7E /* Main.storyboard */,
 				A580B7A52383DF4F003BCF7E /* Assets.xcassets */,
-				A580B7A72383DF4F003BCF7E /* LaunchScreen.storyboard */,
 				A580B7AA2383DF4F003BCF7E /* Info.plist */,
+				A5035522238573CC00FDAE12 /* Main */,
+				A503551F2385736E00FDAE12 /* Entities */,
+				A50355202385739200FDAE12 /* Database */,
+				A50355492386A3FA00FDAE12 /* Domain */,
+				A5035523238573FE00FDAE12 /* Presentation */,
+				A50355562386A62C00FDAE12 /* Extensions */,
 			);
 			path = MobileHospital;
 			sourceTree = "<group>";
@@ -135,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A580B7C32383DF4F003BCF7E /* Build configuration list for PBXNativeTarget "MobileHospital" */;
 			buildPhases = (
+				9EDAAA99D6141AEB3EBD591E /* [CP] Check Pods Manifest.lock */,
 				A580B7952383DF4A003BCF7E /* Sources */,
 				A580B7962383DF4A003BCF7E /* Frameworks */,
 				A580B7972383DF4A003BCF7E /* Resources */,
+				9221851A9507DB44509F69CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A580B7C62383DF4F003BCF7E /* Build configuration list for PBXNativeTarget "MobileHospitalTests" */;
 			buildPhases = (
+				47A5C5865FA403B54F2819CD /* [CP] Check Pods Manifest.lock */,
 				A580B7AB2383DF4F003BCF7E /* Sources */,
 				A580B7AC2383DF4F003BCF7E /* Frameworks */,
 				A580B7AD2383DF4F003BCF7E /* Resources */,
@@ -170,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A580B7C92383DF4F003BCF7E /* Build configuration list for PBXNativeTarget "MobileHospitalUITests" */;
 			buildPhases = (
+				1AFD1019072F8B5B49CB8E40 /* [CP] Check Pods Manifest.lock */,
 				A580B7B62383DF4F003BCF7E /* Sources */,
 				A580B7B72383DF4F003BCF7E /* Frameworks */,
 				A580B7B82383DF4F003BCF7E /* Resources */,
+				1F2CED01BDA779983F2EF12E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A580B7A92383DF4F003BCF7E /* LaunchScreen.storyboard in Resources */,
+				A580B7CD2383DFC7003BCF7E /* GoogleService-Info.plist in Resources */,
 				A580B7A62383DF4F003BCF7E /* Assets.xcassets in Resources */,
 				A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */,
 			);
@@ -254,13 +483,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AFD1019072F8B5B49CB8E40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileHospital-MobileHospitalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F2CED01BDA779983F2EF12E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47A5C5865FA403B54F2819CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileHospitalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9221851A9507DB44509F69CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EDAAA99D6141AEB3EBD591E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileHospital-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A580B7952383DF4A003BCF7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A580B7A12383DF4A003BCF7E /* ViewController.swift in Sources */,
+				A50355552386A58100FDAE12 /* Models.swift in Sources */,
+				A503553723869F3F00FDAE12 /* ViewController.swift in Sources */,
+				A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */,
+				A503554B2386A40C00FDAE12 /* UseCase.swift in Sources */,
+				A50355472386A31500FDAE12 /* BasePresenter.swift in Sources */,
+				A503554D2386A43500FDAE12 /* Response.swift in Sources */,
+				A50355532386A4F400FDAE12 /* Events.swift in Sources */,
+				A503553F2386A24A00FDAE12 /* MainView.swift in Sources */,
+				A503553523869D4500FDAE12 /* SharedData.swift in Sources */,
+				A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */,
+				A503553323869D1600FDAE12 /* SessionData.swift in Sources */,
+				A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */,
+				A503553923869FCB00FDAE12 /* ViewController2.swift in Sources */,
+				A50355512386A4E300FDAE12 /* EventBus.swift in Sources */,
 				A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */,
+				A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */,
+				A503553D2386A24A00FDAE12 /* MainController.swift in Sources */,
+				A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */,
+				A50355482386A31500FDAE12 /* BaseView.swift in Sources */,
+				A503552B238575A700FDAE12 /* UIViewController.swift in Sources */,
+				A50355582386A63900FDAE12 /* Date.swift in Sources */,
+				A503554F2386A47100FDAE12 /* Errors.swift in Sources */,
 				A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +784,7 @@
 		};
 		A580B7C42383DF4F003BCF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +803,7 @@
 		};
 		A580B7C52383DF4F003BCF7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +822,7 @@
 		};
 		A580B7C72383DF4F003BCF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +845,7 @@
 		};
 		A580B7C82383DF4F003BCF7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +868,7 @@
 		};
 		A580B7CA2383DF4F003BCF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +889,7 @@
 		};
 		A580B7CB2383DF4F003BCF7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFD079DE5A8A4A2D4F81D88 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

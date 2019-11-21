@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>297788893175-ojhpm2p4cqqrmva2araa5b8m4s34n7kv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.297788893175-ojhpm2p4cqqrmva2araa5b8m4s34n7kv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUVUUEn86pxLHfWVrJOb1rjWS5VbLGy4I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>297788893175</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.endonazerMobile.MobileHospital</string>
+	<key>PROJECT_ID</key>
+	<string>mobilehospital-db8b1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mobilehospital-db8b1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:297788893175:ios:02e2c18ab7a9321874f0f2</string>
+	<key>DATABASE_URL</key>
+	<string>https://mobilehospital-db8b1.firebaseio.com/</string>
+</dict>
+</plist>

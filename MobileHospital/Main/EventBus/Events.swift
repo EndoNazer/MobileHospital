@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+enum Events: Hashable {
+    case UnauthEvent
+    case MessageEvent
+    
+    case ShowLoader
+    case HideLoader
+}
+
+extension Events {
+    
+    func getEventTag() -> String {
+        return "\(hashValue)"
+    }
+    
+    func post() {
+        EventBus.post(getEventTag())
+    }
+    
+    func post(_ sender: Any?) {
+        EventBus.post(getEventTag(), sender: sender)
+    }
+    
+}

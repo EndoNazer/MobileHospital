@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        configureNavigationBar()
+        configureStatusBar()
         return true
     }
 
@@ -30,6 +34,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    private func configureStatusBar() {
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+    }
+    
+    private func configureNavigationBar() {
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        let navigationBarTitleAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 18.0, weight: .regular)]
+        navigationBarAppearace.titleTextAttributes = navigationBarTitleAttributes
+        
+        let barButtonItemsAttributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 14.0, weight: .regular),
+            .foregroundColor: UIColor.brown
+        ]
+        UIBarButtonItem.appearance().setTitleTextAttributes(barButtonItemsAttributes, for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes(barButtonItemsAttributes, for: .highlighted)
+        UIBarButtonItem.appearance().setTitleTextAttributes(barButtonItemsAttributes, for: .selected)
+        UIBarButtonItem.appearance().tintColor = UIColor.brown
     }
 
 
