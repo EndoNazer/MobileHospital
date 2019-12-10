@@ -28,7 +28,7 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
                 UIViewController.MobileHospital.ViewController.showAsRoot()
             }
         } else {
-            UIViewController.MobileHospital.ViewController.show()
+            UIViewController.MobileHospital.AuthorizationViewController.show()
             //UIViewController.MobileHospital.AuthLoginViewController.show()
         }
     }

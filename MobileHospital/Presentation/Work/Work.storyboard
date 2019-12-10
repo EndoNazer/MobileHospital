@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o0g-bG-INd">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Документы-->
+        <scene sceneID="1gf-cL-Sec">
+            <objects>
+                <viewController storyboardIdentifier="DocumentsViewController" title="Документы" id="6D2-sB-c9D" customClass="DocumentsViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S01-Cd-Ypf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gsm-6q-uQw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Документы" image="doc.text" catalog="system" id="h9N-W0-8bd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r2N-zY-AEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="-15"/>
+        </scene>
+        <!--Пациенты-->
+        <scene sceneID="pcQ-Eu-6pf">
+            <objects>
+                <viewController storyboardIdentifier="PatientsViewController" title="Пациенты" id="Lgr-Fy-3uV" customClass="PatientsViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="emO-XW-8VT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2pW-gK-5ZP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Пациенты" image="person.3" catalog="system" selectedImage="person.3" id="6fP-5b-TIL">
+                        <color key="badgeColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSm-lN-yRr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624" y="-15"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="PbU-V4-BAV">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" title="Профиль" id="fmw-ow-hHK" customClass="ProfileViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SLe-Fe-i1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1xu-lx-LCJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" selectedImage="person" id="7yN-y0-ans"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sY6-be-NuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="-14"/>
+        </scene>
+        <!--Действия-->
+        <scene sceneID="NBu-UI-Koq">
+            <objects>
+                <viewController storyboardIdentifier="ActionsViewController" title="Действия" id="l7v-sq-VEQ" customClass="ActionsViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N9p-wB-bo9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MOV-Rs-uvJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Действия" image="square.and.arrow.up" catalog="system" selectedImage="square.and.arrow.up" id="nSa-Cc-0Tc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YcC-LW-Xle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="-14"/>
+        </scene>
+        <!--Таб-->
+        <scene sceneID="LoJ-zT-LB0">
+            <objects>
+                <tabBarController storyboardIdentifier="WorkViewController" title="Таб" id="o0g-bG-INd" customClass="WorkViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qEH-52-UkG">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lgr-Fy-3uV" kind="relationship" relationship="viewControllers" id="SLZ-6D-CZ0"/>
+                        <segue destination="l7v-sq-VEQ" kind="relationship" relationship="viewControllers" id="2xz-3U-1WZ"/>
+                        <segue destination="6D2-sB-c9D" kind="relationship" relationship="viewControllers" id="1KR-8o-kXZ"/>
+                        <segue destination="fmw-ow-hHK" kind="relationship" relationship="viewControllers" id="sns-Ym-O6o"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCv-Za-44t" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="-851"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.text" catalog="system" width="56" height="64"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.3" catalog="system" width="72" height="35"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>

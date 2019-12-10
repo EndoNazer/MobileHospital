@@ -27,6 +27,8 @@ extension UIStoryboard {
 //        case Invoices
 //        case ReturnablePackages
         case Main
+        case Authorization
+        case Work
         
         func getStoryBoard() -> UIStoryboard {
             return UIStoryboard(name: getStoryboardName(), bundle: nil)

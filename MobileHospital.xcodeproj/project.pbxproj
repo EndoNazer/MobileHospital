@@ -30,6 +30,10 @@
 		A50355552386A58100FDAE12 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355542386A58100FDAE12 /* Models.swift */; };
 		A50355582386A63900FDAE12 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355572386A63900FDAE12 /* Date.swift */; };
 		A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503555A2386A6D900FDAE12 /* PreloaderView.swift */; };
+		A503555E2386B08F00FDAE12 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503555D2386B08F00FDAE12 /* AuthorizationViewController.swift */; };
+		A50355602386B10A00FDAE12 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A503555F2386B10A00FDAE12 /* Authorization.storyboard */; };
+		A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355612386B7DE00FDAE12 /* ImageTextField.swift */; };
+		A50355642386B88600FDAE12 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355632386B88600FDAE12 /* UIView.swift */; };
 		A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79C2383DF4A003BCF7E /* AppDelegate.swift */; };
 		A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */; };
 		A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580B7A22383DF4A003BCF7E /* Main.storyboard */; };
@@ -38,6 +42,14 @@
 		A580B7B42383DF4F003BCF7E /* MobileHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B7B32383DF4F003BCF7E /* MobileHospitalTests.swift */; };
 		A580B7BF2383DF4F003BCF7E /* MobileHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B7BE2383DF4F003BCF7E /* MobileHospitalUITests.swift */; };
 		A580B7CD2383DFC7003BCF7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A580B7CC2383DFC7003BCF7E /* GoogleService-Info.plist */; };
+		A58BE9A523992C38008FC44B /* Work.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9A323992C38008FC44B /* Work.storyboard */; };
+		A58BE9A623992C38008FC44B /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9A423992C38008FC44B /* WorkViewController.swift */; };
+		A58BE9AB23993443008FC44B /* PatientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9AA23993443008FC44B /* PatientsViewController.swift */; };
+		A58BE9AD23993467008FC44B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9AC23993467008FC44B /* ProfileViewController.swift */; };
+		A58BE9B223993749008FC44B /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9B123993749008FC44B /* ActionsViewController.swift */; };
+		A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9B32399376A008FC44B /* DocumentsViewController.swift */; };
+		A58BE9B9239A64E7008FC44B /* Cloud-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */; };
+		A58BE9BA239A64E7008FC44B /* Cloud-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */; };
 		B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +98,10 @@
 		A50355542386A58100FDAE12 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		A50355572386A63900FDAE12 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A503555A2386A6D900FDAE12 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
+		A503555D2386B08F00FDAE12 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		A503555F2386B10A00FDAE12 /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		A50355612386B7DE00FDAE12 /* ImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextField.swift; sourceTree = "<group>"; };
+		A50355632386B88600FDAE12 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A580B7992383DF4A003BCF7E /* MobileHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580B79C2383DF4A003BCF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +116,14 @@
 		A580B7BE2383DF4F003BCF7E /* MobileHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileHospitalUITests.swift; sourceTree = "<group>"; };
 		A580B7C02383DF4F003BCF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A580B7CC2383DFC7003BCF7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A58BE9A323992C38008FC44B /* Work.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Work.storyboard; path = Work/Work.storyboard; sourceTree = "<group>"; };
+		A58BE9A423992C38008FC44B /* WorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		A58BE9AA23993443008FC44B /* PatientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsViewController.swift; sourceTree = "<group>"; };
+		A58BE9AC23993467008FC44B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A58BE9B123993749008FC44B /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
+		A58BE9B32399376A008FC44B /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Light.otf"; sourceTree = "<group>"; };
+		A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Bold.otf"; sourceTree = "<group>"; };
 		AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,9 +219,13 @@
 			children = (
 				A5035525238574A200FDAE12 /* Common */,
 				A580B7A22383DF4A003BCF7E /* Main.storyboard */,
+				A503555F2386B10A00FDAE12 /* Authorization.storyboard */,
 				A580B7A72383DF4F003BCF7E /* LaunchScreen.storyboard */,
+				A58BE9A323992C38008FC44B /* Work.storyboard */,
 				A5035526238574B300FDAE12 /* Main */,
+				A503555C2386B07700FDAE12 /* Authorization */,
 				A50355402386A25A00FDAE12 /* Test */,
+				A58BE9A723992C48008FC44B /* Work */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -281,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				A50355572386A63900FDAE12 /* Date.swift */,
+				A50355632386B88600FDAE12 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,8 +318,17 @@
 			isa = PBXGroup;
 			children = (
 				A503555A2386A6D900FDAE12 /* PreloaderView.swift */,
+				A50355612386B7DE00FDAE12 /* ImageTextField.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A503555C2386B07700FDAE12 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				A503555D2386B08F00FDAE12 /* AuthorizationViewController.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 		A580B7902383DF49003BCF7E = {
@@ -318,6 +356,7 @@
 		A580B79B2383DF4A003BCF7E /* MobileHospital */ = {
 			isa = PBXGroup;
 			children = (
+				A58BE9B6239A64B9008FC44B /* Other */,
 				A580B7CC2383DFC7003BCF7E /* GoogleService-Info.plist */,
 				A580B79C2383DF4A003BCF7E /* AppDelegate.swift */,
 				A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */,
@@ -349,6 +388,59 @@
 				A580B7C02383DF4F003BCF7E /* Info.plist */,
 			);
 			path = MobileHospitalUITests;
+			sourceTree = "<group>";
+		};
+		A58BE9A723992C48008FC44B /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				A58BE9A423992C38008FC44B /* WorkViewController.swift */,
+				A58BE9A82399341A008FC44B /* Patients */,
+				A58BE9AE23993726008FC44B /* Actions */,
+				A58BE9AF23993736008FC44B /* Documents */,
+				A58BE9A923993427008FC44B /* Profile */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
+		A58BE9A82399341A008FC44B /* Patients */ = {
+			isa = PBXGroup;
+			children = (
+				A58BE9AA23993443008FC44B /* PatientsViewController.swift */,
+			);
+			path = Patients;
+			sourceTree = "<group>";
+		};
+		A58BE9A923993427008FC44B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A58BE9AC23993467008FC44B /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A58BE9AE23993726008FC44B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				A58BE9B123993749008FC44B /* ActionsViewController.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		A58BE9AF23993736008FC44B /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				A58BE9B32399376A008FC44B /* DocumentsViewController.swift */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		A58BE9B6239A64B9008FC44B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */,
+				A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,9 +553,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A580B7A92383DF4F003BCF7E /* LaunchScreen.storyboard in Resources */,
+				A50355602386B10A00FDAE12 /* Authorization.storyboard in Resources */,
+				A58BE9BA239A64E7008FC44B /* Cloud-Bold.otf in Resources */,
 				A580B7CD2383DFC7003BCF7E /* GoogleService-Info.plist in Resources */,
 				A580B7A62383DF4F003BCF7E /* Assets.xcassets in Resources */,
 				A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */,
+				A58BE9A523992C38008FC44B /* Work.storyboard in Resources */,
+				A58BE9B9239A64E7008FC44B /* Cloud-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +687,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50355642386B88600FDAE12 /* UIView.swift in Sources */,
 				A50355552386A58100FDAE12 /* Models.swift in Sources */,
+				A58BE9AB23993443008FC44B /* PatientsViewController.swift in Sources */,
 				A503553723869F3F00FDAE12 /* ViewController.swift in Sources */,
 				A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */,
 				A503554B2386A40C00FDAE12 /* UseCase.swift in Sources */,
@@ -602,16 +700,22 @@
 				A503553523869D4500FDAE12 /* SharedData.swift in Sources */,
 				A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */,
 				A503553323869D1600FDAE12 /* SessionData.swift in Sources */,
+				A58BE9AD23993467008FC44B /* ProfileViewController.swift in Sources */,
 				A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */,
+				A503555E2386B08F00FDAE12 /* AuthorizationViewController.swift in Sources */,
+				A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */,
 				A503553923869FCB00FDAE12 /* ViewController2.swift in Sources */,
 				A50355512386A4E300FDAE12 /* EventBus.swift in Sources */,
+				A58BE9B223993749008FC44B /* ActionsViewController.swift in Sources */,
 				A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */,
 				A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */,
+				A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */,
 				A503553D2386A24A00FDAE12 /* MainController.swift in Sources */,
 				A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */,
 				A50355482386A31500FDAE12 /* BaseView.swift in Sources */,
 				A503552B238575A700FDAE12 /* UIViewController.swift in Sources */,
 				A50355582386A63900FDAE12 /* Date.swift in Sources */,
+				A58BE9A623992C38008FC44B /* WorkViewController.swift in Sources */,
 				A503554F2386A47100FDAE12 /* Errors.swift in Sources */,
 				A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */,
 			);

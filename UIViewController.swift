@@ -69,8 +69,8 @@ extension UIViewController {
         
         case ViewController
         case ViewController2
-        
-        case ReturnablePackagesViewController
+        case AuthorizationViewController
+        case WorkViewController
         
         private func getController<VC: UIViewController>() -> VC {
             return getStoryBoard().instantiateViewController(withIdentifier: getViewControllerName()) as! VC
@@ -92,8 +92,12 @@ extension UIViewController {
                 storyBoard = UIStoryboard.MobileHospital.Main.getStoryBoard()
                 break
                 
-            case .ReturnablePackagesViewController:
-                storyBoard = UIStoryboard.MobileHospital.Main.getStoryBoard()
+            case .AuthorizationViewController:
+                storyBoard = UIStoryboard.MobileHospital.Authorization.getStoryBoard()
+                break
+                
+            case .WorkViewController:
+                storyBoard = UIStoryboard.MobileHospital.Work.getStoryBoard()
                 break
                 
             }
