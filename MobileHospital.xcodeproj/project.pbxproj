@@ -15,8 +15,6 @@
 		A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503552E23869C1E00FDAE12 /* MainScreenRouter.swift */; };
 		A503553323869D1600FDAE12 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553223869D1600FDAE12 /* SessionData.swift */; };
 		A503553523869D4500FDAE12 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553423869D4500FDAE12 /* SharedData.swift */; };
-		A503553723869F3F00FDAE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553623869F3F00FDAE12 /* ViewController.swift */; };
-		A503553923869FCB00FDAE12 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553823869FCB00FDAE12 /* ViewController2.swift */; };
 		A503553D2386A24A00FDAE12 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553A2386A24A00FDAE12 /* MainController.swift */; };
 		A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553B2386A24A00FDAE12 /* MainPresenter.swift */; };
 		A503553F2386A24A00FDAE12 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503553C2386A24A00FDAE12 /* MainView.swift */; };
@@ -50,6 +48,9 @@
 		A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9B32399376A008FC44B /* DocumentsViewController.swift */; };
 		A58BE9B9239A64E7008FC44B /* Cloud-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */; };
 		A58BE9BA239A64E7008FC44B /* Cloud-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */; };
+		A5C8D09723C5EE1E00F33B62 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09623C5EE1E00F33B62 /* AuthorizationPresenter.swift */; };
+		A5C8D09923C5EE3400F33B62 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09823C5EE3400F33B62 /* AuthorizationInteractor.swift */; };
+		A5C8D09B23C5F06400F33B62 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09A23C5F06400F33B62 /* AuthorizationRouter.swift */; };
 		B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,8 +84,6 @@
 		A503552E23869C1E00FDAE12 /* MainScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
 		A503553223869D1600FDAE12 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		A503553423869D4500FDAE12 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
-		A503553623869F3F00FDAE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A503553823869FCB00FDAE12 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		A503553A2386A24A00FDAE12 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		A503553B2386A24A00FDAE12 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		A503553C2386A24A00FDAE12 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -124,6 +123,9 @@
 		A58BE9B32399376A008FC44B /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 		A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Light.otf"; sourceTree = "<group>"; };
 		A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Bold.otf"; sourceTree = "<group>"; };
+		A5C8D09623C5EE1E00F33B62 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		A5C8D09823C5EE3400F33B62 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		A5C8D09A23C5F06400F33B62 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
 		AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,7 +226,6 @@
 				A58BE9A323992C38008FC44B /* Work.storyboard */,
 				A5035526238574B300FDAE12 /* Main */,
 				A503555C2386B07700FDAE12 /* Authorization */,
-				A50355402386A25A00FDAE12 /* Test */,
 				A58BE9A723992C48008FC44B /* Work */,
 			);
 			path = Presentation;
@@ -276,15 +277,6 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		A50355402386A25A00FDAE12 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				A503553623869F3F00FDAE12 /* ViewController.swift */,
-				A503553823869FCB00FDAE12 /* ViewController2.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		A50355442386A31500FDAE12 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +319,9 @@
 			isa = PBXGroup;
 			children = (
 				A503555D2386B08F00FDAE12 /* AuthorizationViewController.swift */,
+				A5C8D09623C5EE1E00F33B62 /* AuthorizationPresenter.swift */,
+				A5C8D09823C5EE3400F33B62 /* AuthorizationInteractor.swift */,
+				A5C8D09A23C5F06400F33B62 /* AuthorizationRouter.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -690,24 +685,25 @@
 				A50355642386B88600FDAE12 /* UIView.swift in Sources */,
 				A50355552386A58100FDAE12 /* Models.swift in Sources */,
 				A58BE9AB23993443008FC44B /* PatientsViewController.swift in Sources */,
-				A503553723869F3F00FDAE12 /* ViewController.swift in Sources */,
 				A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */,
 				A503554B2386A40C00FDAE12 /* UseCase.swift in Sources */,
 				A50355472386A31500FDAE12 /* BasePresenter.swift in Sources */,
+				A5C8D09B23C5F06400F33B62 /* AuthorizationRouter.swift in Sources */,
 				A503554D2386A43500FDAE12 /* Response.swift in Sources */,
 				A50355532386A4F400FDAE12 /* Events.swift in Sources */,
 				A503553F2386A24A00FDAE12 /* MainView.swift in Sources */,
 				A503553523869D4500FDAE12 /* SharedData.swift in Sources */,
 				A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */,
 				A503553323869D1600FDAE12 /* SessionData.swift in Sources */,
+				A5C8D09723C5EE1E00F33B62 /* AuthorizationPresenter.swift in Sources */,
 				A58BE9AD23993467008FC44B /* ProfileViewController.swift in Sources */,
 				A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */,
 				A503555E2386B08F00FDAE12 /* AuthorizationViewController.swift in Sources */,
 				A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */,
-				A503553923869FCB00FDAE12 /* ViewController2.swift in Sources */,
 				A50355512386A4E300FDAE12 /* EventBus.swift in Sources */,
 				A58BE9B223993749008FC44B /* ActionsViewController.swift in Sources */,
 				A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */,
+				A5C8D09923C5EE3400F33B62 /* AuthorizationInteractor.swift in Sources */,
 				A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */,
 				A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */,
 				A503553D2386A24A00FDAE12 /* MainController.swift in Sources */,

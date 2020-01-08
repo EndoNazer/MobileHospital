@@ -67,8 +67,6 @@ extension UIViewController {
 extension UIViewController {
     enum MobileHospital: String {
         
-        case ViewController
-        case ViewController2
         case AuthorizationViewController
         case WorkViewController
         
@@ -83,14 +81,6 @@ extension UIViewController {
         private func getStoryBoard() -> UIStoryboard {
             let storyBoard: UIStoryboard
             switch self {
-                
-                //            case .ReturnablePackagesViewController:
-                //                storyBoard = UIStoryboard.Protek.ReturnablePackages.getStoryBoard()
-                //                break
-                
-            case .ViewController, .ViewController2:
-                storyBoard = UIStoryboard.MobileHospital.Main.getStoryBoard()
-                break
                 
             case .AuthorizationViewController:
                 storyBoard = UIStoryboard.MobileHospital.Authorization.getStoryBoard()

@@ -19,14 +19,15 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
     
     func viewDidAppear() {
         if isUserExist() {
-            if let doctor: Doctor = SessionData.SelectedDoctor.getValue() {
-                //let workTab: WorkTab = client.isBillTo() ? .debt : .promo
-                UIViewController.MobileHospital.ViewController.showAsRoot { (vc: ViewController) in
-                    //vc.switchTab(to: workTab)
-                }
-            } else {
-                UIViewController.MobileHospital.ViewController.showAsRoot()
-            }
+            print("")
+//            if let doctor: Doctor = SessionData.SelectedDoctor.getValue() {
+//                //let workTab: WorkTab = client.isBillTo() ? .debt : .promo
+//                //UIViewController.MobileHospital.ViewController.showAsRoot { (vc: ViewController) in
+//                    //vc.switchTab(to: workTab)
+//                }
+//            } else {
+//                //UIViewController.MobileHospital.ViewController.showAsRoot()
+//            }
         } else {
             UIViewController.MobileHospital.AuthorizationViewController.show()
             //UIViewController.MobileHospital.AuthLoginViewController.show()
