@@ -12,7 +12,7 @@ var instanseData: [SessionData: Any] = [:]
 
 enum SessionData {
     case MainRouter // MainScreenRouter.class
-    case AuthLogin
+    case AuthEmail
     case AuthPassword //String.class
     case SelectedDoctor // Doctor.class
     

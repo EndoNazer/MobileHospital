@@ -15,7 +15,7 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet weak var emailField: ImageTextField!
     @IBOutlet weak var passwordField: ImageTextField!
     
-    lazy var presenter: AuthorizationPresenter = AuthorizationPresenter()
+    lazy var presenter: AuthorizationPresenter = AuthorizationPresenter(viewState: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,5 +107,9 @@ class AuthorizationViewController: UIViewController {
 //            self.view.frame.origin.y -= shiftDistance
 //        }
 //    }
+    
+}
+
+extension AuthorizationViewController: AuthorizationView {
     
 }

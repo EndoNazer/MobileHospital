@@ -9,8 +9,8 @@
 import UIKit
 
 class User {
-    var id: Int64 = 0
-    var login: String = ""
+    var id: String = ""
+    var email: String = ""
     var password: String = ""
 }
 

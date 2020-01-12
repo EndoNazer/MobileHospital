@@ -48,9 +48,17 @@
 		A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9B32399376A008FC44B /* DocumentsViewController.swift */; };
 		A58BE9B9239A64E7008FC44B /* Cloud-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */; };
 		A58BE9BA239A64E7008FC44B /* Cloud-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */; };
+		A5B8CF3923C88E840054C2B3 /* FirebaseFirestoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8CF3823C88E840054C2B3 /* FirebaseFirestoreInteractor.swift */; };
 		A5C8D09723C5EE1E00F33B62 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09623C5EE1E00F33B62 /* AuthorizationPresenter.swift */; };
 		A5C8D09923C5EE3400F33B62 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09823C5EE3400F33B62 /* AuthorizationInteractor.swift */; };
 		A5C8D09B23C5F06400F33B62 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09A23C5F06400F33B62 /* AuthorizationRouter.swift */; };
+		A5C8D09D23C5F55D00F33B62 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09C23C5F55D00F33B62 /* AuthorizationView.swift */; };
+		A5C8D09F23C5F6A600F33B62 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D09E23C5F6A600F33B62 /* MainInteractor.swift */; };
+		A5C8D0A123C5F6B300F33B62 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A023C5F6B300F33B62 /* MainRouter.swift */; };
+		A5C8D0A323C5F6F200F33B62 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A223C5F6F200F33B62 /* BaseInteractor.swift */; };
+		A5C8D0A523C5F9C900F33B62 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A423C5F9C900F33B62 /* BaseModel.swift */; };
+		A5C8D0A723C5FEAB00F33B62 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A623C5FEAB00F33B62 /* Array.swift */; };
+		A5C8D0A923C63A0500F33B62 /* UserDefaultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A823C63A0500F33B62 /* UserDefaultsInteractor.swift */; };
 		B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,9 +131,17 @@
 		A58BE9B32399376A008FC44B /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 		A58BE9B7239A64E4008FC44B /* Cloud-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Light.otf"; sourceTree = "<group>"; };
 		A58BE9B8239A64E7008FC44B /* Cloud-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Bold.otf"; sourceTree = "<group>"; };
+		A5B8CF3823C88E840054C2B3 /* FirebaseFirestoreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreInteractor.swift; sourceTree = "<group>"; };
 		A5C8D09623C5EE1E00F33B62 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		A5C8D09823C5EE3400F33B62 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
 		A5C8D09A23C5F06400F33B62 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		A5C8D09C23C5F55D00F33B62 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		A5C8D09E23C5F6A600F33B62 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		A5C8D0A023C5F6B300F33B62 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		A5C8D0A223C5F6F200F33B62 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		A5C8D0A423C5F9C900F33B62 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		A5C8D0A623C5FEAB00F33B62 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		A5C8D0A823C63A0500F33B62 /* UserDefaultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteractor.swift; sourceTree = "<group>"; };
 		AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +201,7 @@
 		A503551F2385736E00FDAE12 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A5C8D0A423C5F9C900F33B62 /* BaseModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -193,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				A50355542386A58100FDAE12 /* Models.swift */,
+				A5C8D0A823C63A0500F33B62 /* UserDefaultsInteractor.swift */,
+				A5B8CF3823C88E840054C2B3 /* FirebaseFirestoreInteractor.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -235,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				A50355592386A6C800FDAE12 /* View */,
-				A50355442386A31500FDAE12 /* MVP */,
+				A50355442386A31500FDAE12 /* VIPER */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -245,6 +264,8 @@
 			children = (
 				A503553A2386A24A00FDAE12 /* MainController.swift */,
 				A503553B2386A24A00FDAE12 /* MainPresenter.swift */,
+				A5C8D09E23C5F6A600F33B62 /* MainInteractor.swift */,
+				A5C8D0A023C5F6B300F33B62 /* MainRouter.swift */,
 				A503553C2386A24A00FDAE12 /* MainView.swift */,
 			);
 			path = Main;
@@ -277,13 +298,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		A50355442386A31500FDAE12 /* MVP */ = {
+		A50355442386A31500FDAE12 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
 				A50355452386A31500FDAE12 /* BasePresenter.swift */,
+				A5C8D0A223C5F6F200F33B62 /* BaseInteractor.swift */,
 				A50355462386A31500FDAE12 /* BaseView.swift */,
 			);
-			path = MVP;
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 		A50355492386A3FA00FDAE12 /* Domain */ = {
@@ -302,6 +324,7 @@
 			children = (
 				A50355572386A63900FDAE12 /* Date.swift */,
 				A50355632386B88600FDAE12 /* UIView.swift */,
+				A5C8D0A623C5FEAB00F33B62 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +345,7 @@
 				A5C8D09623C5EE1E00F33B62 /* AuthorizationPresenter.swift */,
 				A5C8D09823C5EE3400F33B62 /* AuthorizationInteractor.swift */,
 				A5C8D09A23C5F06400F33B62 /* AuthorizationRouter.swift */,
+				A5C8D09C23C5F55D00F33B62 /* AuthorizationView.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -691,29 +715,37 @@
 				A5C8D09B23C5F06400F33B62 /* AuthorizationRouter.swift in Sources */,
 				A503554D2386A43500FDAE12 /* Response.swift in Sources */,
 				A50355532386A4F400FDAE12 /* Events.swift in Sources */,
+				A5C8D0A723C5FEAB00F33B62 /* Array.swift in Sources */,
 				A503553F2386A24A00FDAE12 /* MainView.swift in Sources */,
 				A503553523869D4500FDAE12 /* SharedData.swift in Sources */,
 				A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */,
 				A503553323869D1600FDAE12 /* SessionData.swift in Sources */,
 				A5C8D09723C5EE1E00F33B62 /* AuthorizationPresenter.swift in Sources */,
 				A58BE9AD23993467008FC44B /* ProfileViewController.swift in Sources */,
+				A5C8D0A123C5F6B300F33B62 /* MainRouter.swift in Sources */,
+				A5C8D09F23C5F6A600F33B62 /* MainInteractor.swift in Sources */,
 				A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */,
 				A503555E2386B08F00FDAE12 /* AuthorizationViewController.swift in Sources */,
 				A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */,
 				A50355512386A4E300FDAE12 /* EventBus.swift in Sources */,
 				A58BE9B223993749008FC44B /* ActionsViewController.swift in Sources */,
 				A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */,
+				A5C8D0A923C63A0500F33B62 /* UserDefaultsInteractor.swift in Sources */,
+				A5B8CF3923C88E840054C2B3 /* FirebaseFirestoreInteractor.swift in Sources */,
 				A5C8D09923C5EE3400F33B62 /* AuthorizationInteractor.swift in Sources */,
+				A5C8D0A523C5F9C900F33B62 /* BaseModel.swift in Sources */,
 				A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */,
 				A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */,
 				A503553D2386A24A00FDAE12 /* MainController.swift in Sources */,
 				A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */,
 				A50355482386A31500FDAE12 /* BaseView.swift in Sources */,
+				A5C8D0A323C5F6F200F33B62 /* BaseInteractor.swift in Sources */,
 				A503552B238575A700FDAE12 /* UIViewController.swift in Sources */,
 				A50355582386A63900FDAE12 /* Date.swift in Sources */,
 				A58BE9A623992C38008FC44B /* WorkViewController.swift in Sources */,
 				A503554F2386A47100FDAE12 /* Errors.swift in Sources */,
 				A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */,
+				A5C8D09D23C5F55D00F33B62 /* AuthorizationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
