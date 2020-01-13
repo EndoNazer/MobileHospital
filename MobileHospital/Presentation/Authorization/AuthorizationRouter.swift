@@ -8,10 +8,6 @@
 
 import UIKit
 
-class AuthorizationRouter {
-    
-    func toWork() {
-        UIViewController.MobileHospital.WorkViewController.showAsRoot()
-    }
+class AuthorizationRouter: BaseRouter {
     
 }

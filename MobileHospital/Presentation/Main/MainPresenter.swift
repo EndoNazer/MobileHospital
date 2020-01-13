@@ -10,6 +10,7 @@ import UIKit
 
 class MainPresenter<T: MainView>:BasePresenter<T> {
     
+    var interactor = MainInteractor()
     var router = MainRouter()
    
     func viewDidLoad(controller: UINavigationController) {
@@ -21,17 +22,9 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
     
     func viewDidAppear() {
         if isUserExist() {
-//            if let doctor: Doctor = SessionData.SelectedDoctor.getValue() {
-//                //let workTab: WorkTab = client.isBillTo() ? .debt : .promo
-//                //UIViewController.MobileHospital.ViewController.showAsRoot { (vc: ViewController) in
-//                    //vc.switchTab(to: workTab)
-//                }
-//            } else {
-//                //UIViewController.MobileHospital.ViewController.showAsRoot()
-//            }
+            UIViewController.MobileHospital.WorkViewController.showAsRoot()
         } else {
-            UIViewController.MobileHospital.AuthorizationViewController.show()
-            //UIViewController.MobileHospital.AuthLoginViewController.show()
+            UIViewController.MobileHospital.AuthorizationViewController.showAsRoot()
         }
     }
     
@@ -53,19 +46,15 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
         }
         registerEventOnMainThread(Events.UnauthEvent) { (_: Void?) in
             self.removeUserData()
-            //UIViewController.MobileHospital.AuthLoginViewController.showAsRoot()
+            UIViewController.MobileHospital.AuthorizationViewController.showAsRoot()
         }
     }
     
     func isUserExist() -> Bool {
-        let user: User? = SessionData.SelectedDoctor.getValue()
-        return user != nil
+        let email: String? = SessionData.AuthEmail.getValue()
+        let password: String? = SessionData.AuthPassword.getValue()
+        return email != nil && password != nil
     }
-    
-//    func isClientSelected() -> Bool {
-//        let client: Client? = SessionData.SelectedClient.getValue()
-//        return client != nil
-//    }
 
     private func initData() {
         if(SharedData.DeviceId.string().isEmpty) {
@@ -77,11 +66,15 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
         if let user = UserDefaultsInteractor.getUser() {
             SessionData.AuthEmail.saveValue(user.email)
             SessionData.AuthPassword.saveValue(user.password)
+            FirebaseFirestoreInteractor.getDoctor { (doctor) in
+                SessionData.SelectedDoctor.saveValue(doctor)
+                UIImage().downloaded(from: doctor.image) { (img) in
+                    SessionData.DoctorAvatar.saveValue(img)
+                }
+            }
         } else {
             removeUserData()
         }
-        
-        
     }
 
     fileprivate func removeUserData() {
@@ -89,4 +82,5 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
         SharedData.removeUserData()
         UserDefaultsInteractor.removeUser()
     }
+    
 }

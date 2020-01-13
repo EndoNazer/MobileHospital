@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AuthorizationView: BaseView {
-    
+    func hideKeyboard()
 }

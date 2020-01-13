@@ -45,12 +45,7 @@ class WorkViewController: UITabBarController, UITabBarControllerDelegate {
     }
 
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        
-        var selectionAlowed = true
-//        if let client: Client = SessionData.SelectedDoctor.getValue(), !client.isBillTo(), let index = tabBarController.viewControllers?.index(of: viewController), index == WorkTab.debt.rawValue {
-//            selectionAlowed = false
-//            UINavigationController.Alert.ChooseOtherClient.presentAlert()
-//        }
+        let selectionAlowed = true
         return selectionAlowed
     }
     

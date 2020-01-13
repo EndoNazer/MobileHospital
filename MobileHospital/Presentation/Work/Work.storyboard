@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o0g-bG-INd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o0g-bG-INd">
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSm-lN-yRr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624" y="-15"/>
+            <point key="canvasLocation" x="-518" y="-15"/>
         </scene>
         <!--Профиль-->
         <scene sceneID="PbU-V4-BAV">
@@ -48,14 +48,29 @@
                     <view key="view" contentMode="scaleToFill" id="SLe-Fe-i1Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JFD-Hf-cpg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1xu-lx-LCJ" firstAttribute="trailing" secondItem="JFD-Hf-cpg" secondAttribute="trailing" id="AOY-pW-jQa"/>
+                            <constraint firstItem="1xu-lx-LCJ" firstAttribute="bottom" secondItem="JFD-Hf-cpg" secondAttribute="bottom" id="Nh3-8y-HM7"/>
+                            <constraint firstItem="JFD-Hf-cpg" firstAttribute="leading" secondItem="1xu-lx-LCJ" secondAttribute="leading" id="bqT-he-Jdm"/>
+                            <constraint firstItem="JFD-Hf-cpg" firstAttribute="top" secondItem="1xu-lx-LCJ" secondAttribute="top" id="mze-G8-sn5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1xu-lx-LCJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" selectedImage="person" id="7yN-y0-ans"/>
+                    <connections>
+                        <outlet property="profileTableView" destination="JFD-Hf-cpg" id="NMr-SZ-Tjz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sY6-be-NuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-508" y="-14"/>
+            <point key="canvasLocation" x="1590" y="-15"/>
         </scene>
         <!--Действия-->
         <scene sceneID="NBu-UI-Koq">
@@ -73,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="191" y="-14"/>
         </scene>
-        <!--Таб-->
+        <!--Пациенты-->
         <scene sceneID="LoJ-zT-LB0">
             <objects>
-                <tabBarController storyboardIdentifier="WorkViewController" title="Таб" id="o0g-bG-INd" customClass="WorkViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="WorkViewController" title="Пациенты" id="o0g-bG-INd" customClass="WorkViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qEH-52-UkG">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -96,7 +111,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="doc.text" catalog="system" width="56" height="64"/>
+        <image name="doc.text" catalog="system" width="32" height="32"/>
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="person.3" catalog="system" width="72" height="35"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>

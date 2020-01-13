@@ -11,30 +11,23 @@ import Firebase
 
 class AuthorizationInteractor: BaseInteractor {//<T: AuthDataResult>: BaseInteractor<T> {
     
-    var isAuthorized: Bool = false
-    
     override func execute() -> Response<Void> {
-       
+        
         return Response()
     }
     
-    func auth(email: String, password: String, whenError: @escaping (() -> Void)) {
-        jobs += self.background({[weak self] (ui, execute) in
-            guard let `self` = self else { return }
-            if self.isAuthorized == false {
-                Events.ShowLoader.post()
-            }
-            Auth.auth().signIn(withEmail: email, password: password) {[weak self] (result, error) in
-                guard let `self` = self else { return }
+    func auth(email: String, password: String, whenError: @escaping (() -> Void), complition: @escaping (() -> Void)) {
+        jobs += self.background({(ui, execute) in
+            Events.ShowLoader.post()
+            Auth.auth().signIn(withEmail: email, password: password) {(result, error) in
                 if error != nil {
                     whenError()
-                    self.isAuthorized = false
                     print("\(error?.localizedDescription)")
                 } else {
-                    self.isAuthorized = true
+                    complition()
                 }
+                Events.HideLoader.post()
             }
-            Events.HideLoader.post()
         })
     }
     

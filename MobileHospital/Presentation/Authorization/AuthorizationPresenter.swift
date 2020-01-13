@@ -19,14 +19,20 @@ class AuthorizationPresenter<T: AuthorizationView>: BasePresenter<T> {
     }
     
     func auth(email: String, password: String, whenError: @escaping (() -> Void)) {
-        interactor.auth(email: email, password: password, whenError: whenError)
-        if interactor.isAuthorized {
+        viewState.hideKeyboard()
+        interactor.auth(email: email, password: password, whenError: whenError, complition: { [weak self] in
+            guard let `self` = self else { return }
             let user = User()
             user.email = email
             user.password = password
             UserDefaultsInteractor.setUser(user: user)
-            router.toWork()
-        }
+            FirebaseFirestoreInteractor.getDoctor { (doctor) in
+                SessionData.SelectedDoctor.saveValue(doctor)
+            }
+            self.router.toWork()
+        })
     }
+    
+    
     
 }

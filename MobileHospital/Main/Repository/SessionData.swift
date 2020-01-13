@@ -15,6 +15,7 @@ enum SessionData {
     case AuthEmail
     case AuthPassword //String.class
     case SelectedDoctor // Doctor.class
+    case DoctorAvatar
     
     //EXAMPLE FOR FILTER
     //case ClientFilterData // ClientFilterData.class

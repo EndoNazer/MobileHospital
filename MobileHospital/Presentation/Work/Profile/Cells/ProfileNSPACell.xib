@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileNSPACell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-yb-oGg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Петр Петров" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIe-1T-PpF" userLabel="NameSurname">
+                            <rect key="frame" x="129" y="15" width="156" height="41"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Петрович" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuy-3s-6qK" userLabel="Patronym">
+                            <rect key="frame" x="147.5" y="66" width="119.5" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="rIe-1T-PpF" firstAttribute="top" secondItem="Tw8-yb-oGg" secondAttribute="top" constant="15" id="3Cq-gx-yYt"/>
+                        <constraint firstAttribute="bottom" secondItem="Yuy-3s-6qK" secondAttribute="bottom" constant="15" id="9EQ-mg-0Lv"/>
+                        <constraint firstItem="Yuy-3s-6qK" firstAttribute="centerX" secondItem="Tw8-yb-oGg" secondAttribute="centerX" id="Ir2-Ug-sUp"/>
+                        <constraint firstItem="Yuy-3s-6qK" firstAttribute="top" secondItem="rIe-1T-PpF" secondAttribute="bottom" constant="10" id="e70-hh-emY"/>
+                        <constraint firstItem="rIe-1T-PpF" firstAttribute="centerX" secondItem="Tw8-yb-oGg" secondAttribute="centerX" id="ep6-xG-fih"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tw8-yb-oGg" secondAttribute="trailing" id="1zD-7v-p94"/>
+                <constraint firstItem="Tw8-yb-oGg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oba-DN-a6B"/>
+                <constraint firstItem="Tw8-yb-oGg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Puo-Bh-oTU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Tw8-yb-oGg" secondAttribute="bottom" id="rNj-LM-ZSn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="nameSurnameLabel" destination="rIe-1T-PpF" id="Ozj-l2-h1F"/>
+                <outlet property="patronymicLabel" destination="Yuy-3s-6qK" id="gan-xN-WIK"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="337.83482142857139"/>
+        </view>
+    </objects>
+</document>

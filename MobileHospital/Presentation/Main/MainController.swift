@@ -47,17 +47,11 @@ class MainController: UINavigationController, MainView {
     }
     
     func showLoader() {
-        if let loaderView = preloaderView {
+        if preloaderView != nil {
             hideLoader()
             showLoader()
         } else {
             let loaderView = UIView.init(frame: self.view.frame)
-            
-//            let gradientRingLayer = WCGraintCircleLayer(bounds: CGRect(origin: CGPoint.zero,size:CGSize(width: 150, height: 150)), position:CGPoint(x: 200, y: 300),fromColor:UIColor.blue, toColor:UIColor.white, linewidth:4.0, toValue:0)
-//            loaderView.layer.addSublayer(gradientRingLayer)
-//            let duration = 3.0
-//            gradientRingLayer.animateCircleTo(duration: duration, fromValue: 0, toValue: 1)
-//
             loaderView.center = self.view.center;
             let backgroundColor = UIColor.init(red:216/255.0, green:216/255.0, blue:216/255.0, alpha:0.45);
             loaderView.backgroundColor = backgroundColor

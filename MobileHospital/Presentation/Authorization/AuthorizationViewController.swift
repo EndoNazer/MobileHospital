@@ -112,4 +112,8 @@ class AuthorizationViewController: UIViewController {
 
 extension AuthorizationViewController: AuthorizationView {
     
+    func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
 }
