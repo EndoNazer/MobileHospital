@@ -66,7 +66,7 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
         if let user = UserDefaultsInteractor.getUser() {
             SessionData.AuthEmail.saveValue(user.email)
             SessionData.AuthPassword.saveValue(user.password)
-            FirebaseFirestoreInteractor.getDoctor { (doctor) in
+            FirebaseFirestoreInteractor.getDoctorFromSessionDataValues { (doctor) in
                 SessionData.SelectedDoctor.saveValue(doctor)
                 UIImage().downloaded(from: doctor.image) { (img) in
                     SessionData.DoctorAvatar.saveValue(img)

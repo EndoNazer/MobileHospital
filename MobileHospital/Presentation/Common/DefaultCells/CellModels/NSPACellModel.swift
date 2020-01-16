@@ -8,17 +8,19 @@
 
 import Foundation
 
-class ProfileNSPACellModel: TableCellModel {
+class NSPACellModel: TableCellModel {
     
-    var reuseIdentifier: String = ProfileNSPACell.reuseIdentifier
+    var reuseIdentifier: String = NSPACell.reuseIdentifier
     var name: String
     var surname: String
     var patronymic: String
+    var age: String
     
-    init(name: String, surname: String, patronymic: String) {
+    init(name: String, surname: String, patronymic: String, age: String) {
         self.name = name
         self.surname = surname
         self.patronymic = patronymic
+        self.age = age
     }
     
 }

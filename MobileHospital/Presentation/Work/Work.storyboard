@@ -30,12 +30,27 @@
                     <view key="view" contentMode="scaleToFill" id="emO-XW-8VT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1bs-ek-PmE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2pW-gK-5ZP" firstAttribute="trailing" secondItem="1bs-ek-PmE" secondAttribute="trailing" id="4cD-Ni-vcy"/>
+                            <constraint firstItem="1bs-ek-PmE" firstAttribute="top" secondItem="2pW-gK-5ZP" secondAttribute="top" id="Fyx-ih-8HH"/>
+                            <constraint firstItem="1bs-ek-PmE" firstAttribute="leading" secondItem="2pW-gK-5ZP" secondAttribute="leading" id="OOf-gn-Jz3"/>
+                            <constraint firstItem="2pW-gK-5ZP" firstAttribute="bottom" secondItem="1bs-ek-PmE" secondAttribute="bottom" id="Ugz-jZ-rzf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2pW-gK-5ZP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Пациенты" image="person.3" catalog="system" selectedImage="person.3" id="6fP-5b-TIL">
                         <color key="badgeColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="patientsTableView" destination="1bs-ek-PmE" id="87k-Sr-jW2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSm-lN-yRr" sceneMemberID="firstResponder"/>
             </objects>

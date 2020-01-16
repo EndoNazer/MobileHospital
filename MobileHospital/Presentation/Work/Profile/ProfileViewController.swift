@@ -50,9 +50,9 @@ class ProfileViewController: UIViewController {
     
     private func registerCells() {
         SingleInfoCell.registerNib(forTableView: profileTableView)
-        ProfilePhotoCell.registerNib(forTableView: profileTableView)
-        ProfileNSPACell.registerNib(forTableView: profileTableView)
-        ProfileExitCell.registerNib(forTableView: profileTableView)
+        PhotoCell.registerNib(forTableView: profileTableView)
+        NSPACell.registerNib(forTableView: profileTableView)
+        ActionCell.registerNib(forTableView: profileTableView)
     }
     
 }

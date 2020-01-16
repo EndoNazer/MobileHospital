@@ -25,14 +25,13 @@ class FirebaseFirestoreInteractor {
     }
     
     static func readAllDocuments(collection: String, completion: @escaping (([String: Any]) -> Void)) {
-        var documents: [String: Any] = [:]
         db.collection(collection).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
+                var documents: [String: Any] = [:]
                 for document in querySnapshot!.documents {
-                    let singleDocument: [String: Any] = [document.documentID: document.data()]
-                    documents[document.documentID] = singleDocument
+                    documents[document.documentID] = document.data()
                 }
                 completion(documents)
             }
@@ -40,11 +39,11 @@ class FirebaseFirestoreInteractor {
     }
     
     static func readSingleDocument(collection: String, id: String, completion: @escaping (([String: Any]) -> Void)) {
-        var singleDocument: [String: Any] = [:]
         db.collection(collection).whereField("id", isEqualTo: id).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting document: \(err)")
             } else {
+                var singleDocument: [String: Any] = [:]
                 for document in querySnapshot!.documents {
                     singleDocument = document.data()
                     completion(singleDocument)
@@ -84,7 +83,7 @@ class FirebaseFirestoreInteractor {
         return isContains
     }
     
-    static func getDoctor(complition: @escaping ((Doctor) -> Void)) {
+    static func getDoctorFromSessionDataValues(complition: @escaping ((Doctor) -> Void)) {
         FirebaseFirestoreInteractor.readSingleDocument(type: String.self, collection: "users", data: [
             "email" : SessionData.AuthEmail.getValue() ?? "",
             "password" : SessionData.AuthPassword.getValue() ?? ""
@@ -92,19 +91,22 @@ class FirebaseFirestoreInteractor {
             guard let id = recieved["id"] as? String else { return }
             
             FirebaseFirestoreInteractor.readSingleDocument(collection: "doctors", id: id) { (recieved) in
-                let doctor = Doctor()
-                doctor.id = recieved["id"] as? String ?? ""
-                doctor.age = recieved["Age"] as? String ?? ""
-                doctor.experience = recieved["Experience"] as? String ?? ""
-                doctor.image = recieved["Image"] as? String ?? ""
-                doctor.name = recieved["Name"] as? String ?? ""
-                doctor.numberOfPatients = recieved["NumberOfPatients"] as? String ?? ""
-                doctor.patronymic = recieved["Patronymic"] as? String ?? ""
-                doctor.specialization = recieved["Specialization"] as? String ?? ""
-                doctor.surname = recieved["Surname"] as? String ?? ""
+                let doctor = Doctor(dictionary: recieved)
                 complition(doctor)
             }
         } 
+    }
+    
+    static func getPatients(complition: @escaping (([Patient]) -> Void)) {
+        FirebaseFirestoreInteractor.readAllDocuments(collection: "patients") { (recieved) in
+            var patients: [Patient] = []
+            for value in recieved.values {
+                guard let patientData = value as? [String: Any] else { return }
+                let patient = Patient(dictionary: patientData)
+                patients.append(patient)
+            }
+            complition(patients)
+        }
     }
     
 }

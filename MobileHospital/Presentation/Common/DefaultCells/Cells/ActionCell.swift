@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ProfileExitCell: UITableViewCell {
+class ActionCell: UITableViewCell {
     
     @IBOutlet weak var content: UIView!
+    @IBOutlet weak var displayedTextLabel: UILabel!
     
-    var cellModel: ProfileExitCellModel?
+    var cellModel: ActionCellModel?
     var action: (() -> Void) = {}
     
     override func awakeFromNib() {
@@ -34,7 +35,8 @@ class ProfileExitCell: UITableViewCell {
         action()
     }
     
-    private func configureWith(action: @escaping (() -> Void)) {
+    private func configureWith(text: String, action: @escaping (() -> Void)) {
+        self.displayedTextLabel.text = text
         self.action = action
     }
     
@@ -42,12 +44,12 @@ class ProfileExitCell: UITableViewCell {
 
 //MARK: - TableCellConfigurable
 
-extension ProfileExitCell: TableCellConfigurable {
+extension ActionCell: TableCellConfigurable {
     
     func config(cellModel: TableCellModel) {
-        guard let cellModel = cellModel as? ProfileExitCellModel else { return }
+        guard let cellModel = cellModel as? ActionCellModel else { return }
         self.cellModel = cellModel
-        configureWith(action: cellModel.action)
+        configureWith(text: cellModel.text, action: cellModel.action)
     }
     
 }

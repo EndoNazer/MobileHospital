@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Single Patient View Controller-->
+        <scene sceneID="XI4-iw-Tcf">
+            <objects>
+                <viewController storyboardIdentifier="SinglePatientViewController" id="24F-Y7-XdO" customClass="SinglePatientViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xzC-oh-zvh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3q1-lc-je7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3q1-lc-je7" firstAttribute="leading" secondItem="pau-N6-cIj" secondAttribute="leading" id="2fm-Tm-VwY"/>
+                            <constraint firstItem="pau-N6-cIj" firstAttribute="bottom" secondItem="3q1-lc-je7" secondAttribute="bottom" id="eSE-VG-uwx"/>
+                            <constraint firstItem="3q1-lc-je7" firstAttribute="top" secondItem="pau-N6-cIj" secondAttribute="top" id="vLq-mi-0wd"/>
+                            <constraint firstItem="pau-N6-cIj" firstAttribute="trailing" secondItem="3q1-lc-je7" secondAttribute="trailing" id="yMI-R5-hkf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pau-N6-cIj"/>
+                    </view>
+                    <connections>
+                        <outlet property="singlePatientTableView" destination="3q1-lc-je7" id="Ndc-5s-ULm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NsW-jX-JoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="76"/>
+        </scene>
+    </scenes>
+</document>

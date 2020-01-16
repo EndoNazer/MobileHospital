@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PatientCell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2y-EY-1yi">
+                    <rect key="frame" x="20" y="15" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="IhW-KL-KC2"/>
+                        <constraint firstAttribute="height" constant="21" id="UfA-S3-d64"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Петров Петр Петрович" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wU2-p6-2Ug">
+                    <rect key="frame" x="61" y="7" width="247" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wU2-p6-2Ug" firstAttribute="leading" secondItem="z2y-EY-1yi" secondAttribute="trailing" constant="20" id="6PI-zs-9sc"/>
+                <constraint firstAttribute="trailing" secondItem="wU2-p6-2Ug" secondAttribute="trailing" constant="10" id="73C-KN-NaT"/>
+                <constraint firstItem="wU2-p6-2Ug" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="w9x-1B-flZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wU2-p6-2Ug" secondAttribute="bottom" constant="7" id="x8n-ch-Dfu"/>
+                <constraint firstItem="z2y-EY-1yi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yYr-GE-cHd"/>
+                <constraint firstItem="z2y-EY-1yi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="zIp-k8-exO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="NSPLabel" destination="wU2-p6-2Ug" id="Qfx-qP-tX0"/>
+                <outlet property="numberLabel" destination="z2y-EY-1yi" id="WzN-fq-r56"/>
+            </connections>
+            <point key="canvasLocation" x="42.028985507246382" y="327.79017857142856"/>
+        </view>
+    </objects>
+</document>

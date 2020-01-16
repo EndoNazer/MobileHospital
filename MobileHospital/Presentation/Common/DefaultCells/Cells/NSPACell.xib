@@ -9,22 +9,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileNSPACell" customModule="MobileHospital" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NSPACell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-yb-oGg">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Петр Петров" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIe-1T-PpF" userLabel="NameSurname">
-                            <rect key="frame" x="129" y="15" width="156" height="41"/>
+                            <rect key="frame" x="129" y="15" width="156" height="57"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Петрович" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuy-3s-6qK" userLabel="Patronym">
-                            <rect key="frame" x="147.5" y="66" width="119.5" height="30"/>
+                            <rect key="frame" x="147.5" y="82" width="119.5" height="30"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="88 лет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-8g-4nh">
+                            <rect key="frame" x="181" y="122" width="52" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -32,8 +38,10 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstItem="rIe-1T-PpF" firstAttribute="top" secondItem="Tw8-yb-oGg" secondAttribute="top" constant="15" id="3Cq-gx-yYt"/>
-                        <constraint firstAttribute="bottom" secondItem="Yuy-3s-6qK" secondAttribute="bottom" constant="15" id="9EQ-mg-0Lv"/>
+                        <constraint firstItem="8GT-8g-4nh" firstAttribute="centerX" secondItem="Tw8-yb-oGg" secondAttribute="centerX" id="5jE-U5-EKE"/>
                         <constraint firstItem="Yuy-3s-6qK" firstAttribute="centerX" secondItem="Tw8-yb-oGg" secondAttribute="centerX" id="Ir2-Ug-sUp"/>
+                        <constraint firstItem="8GT-8g-4nh" firstAttribute="top" secondItem="Yuy-3s-6qK" secondAttribute="bottom" constant="10" id="TVW-zL-EBo"/>
+                        <constraint firstAttribute="bottom" secondItem="8GT-8g-4nh" secondAttribute="bottom" constant="15" id="VN3-0M-Lcy"/>
                         <constraint firstItem="Yuy-3s-6qK" firstAttribute="top" secondItem="rIe-1T-PpF" secondAttribute="bottom" constant="10" id="e70-hh-emY"/>
                         <constraint firstItem="rIe-1T-PpF" firstAttribute="centerX" secondItem="Tw8-yb-oGg" secondAttribute="centerX" id="ep6-xG-fih"/>
                     </constraints>
@@ -49,10 +57,11 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="ageLabel" destination="8GT-8g-4nh" id="1ve-Ok-hND"/>
                 <outlet property="nameSurnameLabel" destination="rIe-1T-PpF" id="Ozj-l2-h1F"/>
                 <outlet property="patronymicLabel" destination="Yuy-3s-6qK" id="gan-xN-WIK"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="337.83482142857139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="352.90178571428572"/>
         </view>
     </objects>
 </document>

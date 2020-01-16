@@ -6,7 +6,7 @@
 //  Copyright © 2020 Даниил. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ProfileInteractor: BaseInteractor {
  

@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfilePhotoCell" customModule="MobileHospital" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotoCell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z66-bT-7jz">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fvy-4E-GCo">
-                            <rect key="frame" x="142" y="0.0" width="130" height="130"/>
+                            <rect key="frame" x="142" y="15" width="130" height="130"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="130" id="Fyu-6C-qZP"/>
                                 <constraint firstAttribute="width" constant="130" id="ucl-RG-zef"/>
@@ -28,7 +28,7 @@
                     <constraints>
                         <constraint firstItem="Fvy-4E-GCo" firstAttribute="centerX" secondItem="z66-bT-7jz" secondAttribute="centerX" id="9bY-BX-i6u"/>
                         <constraint firstAttribute="bottom" secondItem="Fvy-4E-GCo" secondAttribute="bottom" id="bd4-w8-pqH"/>
-                        <constraint firstItem="Fvy-4E-GCo" firstAttribute="top" secondItem="z66-bT-7jz" secondAttribute="top" id="qM0-Ss-g5Z"/>
+                        <constraint firstItem="Fvy-4E-GCo" firstAttribute="top" secondItem="z66-bT-7jz" secondAttribute="top" constant="15" id="qM0-Ss-g5Z"/>
                     </constraints>
                 </view>
             </subviews>

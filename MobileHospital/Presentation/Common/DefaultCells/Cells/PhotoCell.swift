@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ProfilePhotoCell: UITableViewCell {
+class PhotoCell: UITableViewCell {
     
     @IBOutlet weak var avatarImageView: UIImageView!
     
-    var cellModel: ProfilePhotoCellModel?
+    var cellModel: PhotoCellModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,10 +36,10 @@ class ProfilePhotoCell: UITableViewCell {
 
 //MARK: - TableCellConfigurable
 
-extension ProfilePhotoCell: TableCellConfigurable {
+extension PhotoCell: TableCellConfigurable {
     
     func config(cellModel: TableCellModel) {
-        guard let cellModel = cellModel as? ProfilePhotoCellModel else { return }
+        guard let cellModel = cellModel as? PhotoCellModel else { return }
         self.cellModel = cellModel
         configureWith(image: cellModel.image)
     }

@@ -26,7 +26,7 @@ class AuthorizationPresenter<T: AuthorizationView>: BasePresenter<T> {
             user.email = email
             user.password = password
             UserDefaultsInteractor.setUser(user: user)
-            FirebaseFirestoreInteractor.getDoctor { (doctor) in
+            FirebaseFirestoreInteractor.getDoctorFromSessionDataValues { (doctor) in
                 SessionData.SelectedDoctor.saveValue(doctor)
             }
             self.router.toWork()

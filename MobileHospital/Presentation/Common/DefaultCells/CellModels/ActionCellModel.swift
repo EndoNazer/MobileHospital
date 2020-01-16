@@ -8,13 +8,14 @@
 
 import Foundation
 
-class ProfileExitCellModel: TableCellModel{
+class ActionCellModel: TableCellModel{
     
-    var reuseIdentifier: String = ProfileExitCell.reuseIdentifier
-    
+    var reuseIdentifier: String = ActionCell.reuseIdentifier
+    var text: String
     var action: (() -> Void)
     
-    init(action: @escaping (() -> Void)) {
+    init(text: String, action: @escaping (() -> Void)) {
+        self.text = text
         self.action = action
     }
     

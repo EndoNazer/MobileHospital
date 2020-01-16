@@ -8,6 +8,6 @@
 
 import Foundation
 
-class ProfileRouter: MainRouter {
+class ProfileRouter: BaseRouter {
     
 }

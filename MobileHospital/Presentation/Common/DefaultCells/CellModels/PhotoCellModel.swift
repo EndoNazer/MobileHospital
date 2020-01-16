@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ProfilePhotoCellModel: TableCellModel {
+class PhotoCellModel: TableCellModel {
     
-    var reuseIdentifier: String = ProfilePhotoCell.reuseIdentifier
+    var reuseIdentifier: String = PhotoCell.reuseIdentifier
     var image: UIImage
     
     init(image: UIImage) {

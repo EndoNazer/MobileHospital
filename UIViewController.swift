@@ -69,6 +69,11 @@ extension UIViewController {
         
         case AuthorizationViewController
         case WorkViewController
+        case SinglePatientViewController
+        case PatientsViewController
+        case ActionsViewController
+        case DocumentsViewController
+        case ProfileViewController
         
         private func getController<VC: UIViewController>() -> VC {
             return getStoryBoard().instantiateViewController(withIdentifier: getViewControllerName()) as! VC
@@ -86,8 +91,12 @@ extension UIViewController {
                 storyBoard = UIStoryboard.MobileHospital.Authorization.getStoryBoard()
                 break
                 
-            case .WorkViewController:
+            case .WorkViewController, .ProfileViewController, .DocumentsViewController, .ActionsViewController, .PatientsViewController:
                 storyBoard = UIStoryboard.MobileHospital.Work.getStoryBoard()
+                break
+                
+            case .SinglePatientViewController:
+                storyBoard = UIStoryboard.MobileHospital.SinglePatient.getStoryBoard()
                 break
                 
             }
