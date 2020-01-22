@@ -11,6 +11,7 @@ target 'MobileHospital' do
   pod 'Firebase/Database'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   
  
   target 'MobileHospitalTests' do

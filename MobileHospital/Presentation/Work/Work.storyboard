@@ -14,10 +14,25 @@
                     <view key="view" contentMode="scaleToFill" id="S01-Cd-Ypf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qkT-YK-a6M">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gsm-6q-uQw" firstAttribute="bottom" secondItem="qkT-YK-a6M" secondAttribute="bottom" id="Fvf-lA-Zye"/>
+                            <constraint firstItem="qkT-YK-a6M" firstAttribute="leading" secondItem="gsm-6q-uQw" secondAttribute="leading" id="Jiq-O0-By6"/>
+                            <constraint firstItem="gsm-6q-uQw" firstAttribute="trailing" secondItem="qkT-YK-a6M" secondAttribute="trailing" id="Lsd-8A-IgV"/>
+                            <constraint firstItem="qkT-YK-a6M" firstAttribute="top" secondItem="gsm-6q-uQw" secondAttribute="top" id="z8j-5Z-6nF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gsm-6q-uQw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Документы" image="doc.text" catalog="system" id="h9N-W0-8bd"/>
+                    <connections>
+                        <outlet property="documentsTableView" destination="qkT-YK-a6M" id="amu-R2-JIh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2N-zY-AEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,10 +109,25 @@
                     <view key="view" contentMode="scaleToFill" id="N9p-wB-bo9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-Hn-bL0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kaj-Hn-bL0" firstAttribute="top" secondItem="MOV-Rs-uvJ" secondAttribute="top" id="44T-02-eR8"/>
+                            <constraint firstItem="MOV-Rs-uvJ" firstAttribute="trailing" secondItem="Kaj-Hn-bL0" secondAttribute="trailing" id="8w3-WY-J3S"/>
+                            <constraint firstItem="Kaj-Hn-bL0" firstAttribute="leading" secondItem="MOV-Rs-uvJ" secondAttribute="leading" id="iaO-Ne-oVm"/>
+                            <constraint firstItem="MOV-Rs-uvJ" firstAttribute="bottom" secondItem="Kaj-Hn-bL0" secondAttribute="bottom" id="nRo-Fd-m4o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MOV-Rs-uvJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Действия" image="square.and.arrow.up" catalog="system" selectedImage="square.and.arrow.up" id="nSa-Cc-0Tc"/>
+                    <connections>
+                        <outlet property="actionsTableView" destination="Kaj-Hn-bL0" id="wGy-Zv-ZaO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcC-LW-Xle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +145,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="Lgr-Fy-3uV" kind="relationship" relationship="viewControllers" id="SLZ-6D-CZ0"/>
-                        <segue destination="l7v-sq-VEQ" kind="relationship" relationship="viewControllers" id="2xz-3U-1WZ"/>
                         <segue destination="6D2-sB-c9D" kind="relationship" relationship="viewControllers" id="1KR-8o-kXZ"/>
                         <segue destination="fmw-ow-hHK" kind="relationship" relationship="viewControllers" id="sns-Ym-O6o"/>
                     </connections>

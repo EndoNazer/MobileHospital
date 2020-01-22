@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddPatientCell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="365"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhl-Am-zX7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="365"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4x-ZB-J3G">
+                            <rect key="frame" x="15" y="15" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="kZ6-fP-4tR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfc-K2-4Eg">
+                            <rect key="frame" x="15" y="65" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="0ZQ-YJ-fJu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJ0-fh-flj">
+                            <rect key="frame" x="15" y="115" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="7mf-Gp-TFN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Диагноз" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFb-os-NSH">
+                            <rect key="frame" x="15" y="215" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="UDd-fG-1lI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vOO-xM-Tgl">
+                            <rect key="frame" x="15" y="165" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="jk9-az-HSf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rg0-eY-meA">
+                            <rect key="frame" x="0.0" y="315" width="414" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить пациента" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-Xx-3ii">
+                                    <rect key="frame" x="129" y="14.5" width="156.5" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="D9d-Xx-3ii" firstAttribute="centerY" secondItem="Rg0-eY-meA" secondAttribute="centerY" id="8Ol-xv-joO"/>
+                                <constraint firstAttribute="height" constant="50" id="O38-Ov-s8m"/>
+                                <constraint firstItem="D9d-Xx-3ii" firstAttribute="centerX" secondItem="Rg0-eY-meA" secondAttribute="centerX" id="y3D-ym-4hh"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ссылка на фото" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmc-NV-o7N">
+                            <rect key="frame" x="15" y="265" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="em9-6d-QPb"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="hQY-Lm-2ec"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="jJ0-fh-flj" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" constant="15" id="0mK-mQ-Ndy"/>
+                        <constraint firstItem="jJ0-fh-flj" firstAttribute="top" secondItem="Qfc-K2-4Eg" secondAttribute="bottom" constant="15" id="17q-4w-ary"/>
+                        <constraint firstItem="xmc-NV-o7N" firstAttribute="top" secondItem="oFb-os-NSH" secondAttribute="bottom" constant="15" id="3Ys-Jg-hcp"/>
+                        <constraint firstAttribute="trailing" secondItem="Rg0-eY-meA" secondAttribute="trailing" id="BJ8-67-InD"/>
+                        <constraint firstItem="vOO-xM-Tgl" firstAttribute="top" secondItem="jJ0-fh-flj" secondAttribute="bottom" constant="15" id="BQl-0b-8wR"/>
+                        <constraint firstAttribute="trailing" secondItem="jJ0-fh-flj" secondAttribute="trailing" constant="15" id="BUc-Vn-hxJ"/>
+                        <constraint firstItem="oFb-os-NSH" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" constant="15" id="Gq7-Vq-HEr"/>
+                        <constraint firstItem="y4x-ZB-J3G" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" constant="15" id="JhY-Xx-7Hw"/>
+                        <constraint firstItem="vOO-xM-Tgl" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" constant="15" id="Lc3-Kg-bGW"/>
+                        <constraint firstAttribute="trailing" secondItem="oFb-os-NSH" secondAttribute="trailing" constant="15" id="NjZ-WM-NE8"/>
+                        <constraint firstAttribute="trailing" secondItem="vOO-xM-Tgl" secondAttribute="trailing" constant="15" id="OEo-Bk-HuX"/>
+                        <constraint firstAttribute="bottom" secondItem="Rg0-eY-meA" secondAttribute="bottom" id="Okt-Gj-bdX"/>
+                        <constraint firstAttribute="trailing" secondItem="y4x-ZB-J3G" secondAttribute="trailing" constant="15" id="TK8-JT-hda"/>
+                        <constraint firstAttribute="trailing" secondItem="Qfc-K2-4Eg" secondAttribute="trailing" constant="15" id="dWz-ky-Zl8"/>
+                        <constraint firstItem="Qfc-K2-4Eg" firstAttribute="top" secondItem="y4x-ZB-J3G" secondAttribute="bottom" constant="15" id="ddB-tk-te4"/>
+                        <constraint firstItem="y4x-ZB-J3G" firstAttribute="top" secondItem="Nhl-Am-zX7" secondAttribute="top" constant="15" id="hVN-Gn-C2p"/>
+                        <constraint firstItem="Rg0-eY-meA" firstAttribute="top" secondItem="xmc-NV-o7N" secondAttribute="bottom" constant="15" id="hVl-Et-DkH"/>
+                        <constraint firstItem="Rg0-eY-meA" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" id="hgI-E1-tL7"/>
+                        <constraint firstItem="xmc-NV-o7N" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" constant="15" id="jfc-0i-ql4"/>
+                        <constraint firstAttribute="trailing" secondItem="xmc-NV-o7N" secondAttribute="trailing" constant="15" id="rpt-kX-mah"/>
+                        <constraint firstItem="oFb-os-NSH" firstAttribute="top" secondItem="vOO-xM-Tgl" secondAttribute="bottom" constant="15" id="zGL-o5-7yu"/>
+                        <constraint firstItem="Qfc-K2-4Eg" firstAttribute="leading" secondItem="Nhl-Am-zX7" secondAttribute="leading" constant="15" id="zxx-Zz-hOv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Nhl-Am-zX7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Inv-Pu-fnN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Nhl-Am-zX7" secondAttribute="bottom" id="NET-U8-kdm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nhl-Am-zX7" secondAttribute="trailing" id="R07-FY-mKV"/>
+                <constraint firstItem="Nhl-Am-zX7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l1w-26-aPQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addButtonView" destination="Rg0-eY-meA" id="xaI-Ke-PlQ"/>
+                <outlet property="ageField" destination="vOO-xM-Tgl" id="1lY-Ke-bn0"/>
+                <outlet property="diagnosisField" destination="oFb-os-NSH" id="kH7-po-3m9"/>
+                <outlet property="nameField" destination="y4x-ZB-J3G" id="5wI-Hs-8kO"/>
+                <outlet property="patronymicField" destination="jJ0-fh-flj" id="R9U-pd-1Oc"/>
+                <outlet property="photoLinkField" destination="xmc-NV-o7N" id="2KX-WL-PQ2"/>
+                <outlet property="surnameField" destination="Qfc-K2-4Eg" id="757-4H-PhP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="194.53125"/>
+        </view>
+    </objects>
+</document>

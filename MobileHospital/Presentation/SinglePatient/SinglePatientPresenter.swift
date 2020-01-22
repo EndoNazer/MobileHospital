@@ -32,10 +32,30 @@ class SinglePatientPresenter<T: SinglePatientView>: BasePresenter<T> {
         let profileNSPACellModel = NSPACellModel(name: self.patient.name, surname: self.patient.surname, patronymic: self.patient.patronymic, age: self.patient.age)
         self.cellModels.append(profileNSPACellModel)
         
-        let actionCellModel = ActionCellModel(text: "Выписать пациента") {
+        
+        if patient.dayOfDischarge == "" {
+            let addDrugActionCellModel = ActionCellModel(text: "Назначить лекарство") { [weak self] in
+                guard let `self` = self else { return }
+                self.router.toAddDrug(patient: self.patient)
+            }
+            self.cellModels.append(addDrugActionCellModel)
             
+            let addOperationActionCellModel = ActionCellModel(text: "Добавить операцию") { [weak self] in
+                guard let `self` = self else { return }
+                self.router.toAddOperation(patient: self.patient)
+            }
+            self.cellModels.append(addOperationActionCellModel)
+            
+            let dischargeActionCellModel = ActionCellModel(text: "Выписать пациента") { [weak self] in
+                guard let `self` = self else { return }
+                self.router.toDischargePatient(patient: self.patient)
+            }
+            self.cellModels.append(dischargeActionCellModel)
+        } else {
+            let dischargeCellModel = SinglePatientInfoCellModel(title: "Пациент выписан " + patient.dayOfDischarge)
+            self.cellModels.append(dischargeCellModel
+            )
         }
-        self.cellModels.append(actionCellModel)
     }
     
     private func getImage() {

@@ -10,4 +10,5 @@ import Foundation
 
 protocol SinglePatientView: BaseView {
     func reloadTable()
+    func popBack()
 }

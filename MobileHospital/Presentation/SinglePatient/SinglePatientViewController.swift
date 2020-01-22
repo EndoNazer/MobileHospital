@@ -20,6 +20,7 @@ class SinglePatientViewController: UIViewController {
         configureTableView()
         configureRespond()
         registerCells()
+        setBackButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +57,7 @@ class SinglePatientViewController: UIViewController {
         PhotoCell.registerNib(forTableView: singlePatientTableView)
         NSPACell.registerNib(forTableView: singlePatientTableView)
         ActionCell.registerNib(forTableView: singlePatientTableView)
+        SinglePatientInfoCell.registerNib(forTableView: singlePatientTableView)
     }
     
 }
@@ -83,6 +85,10 @@ extension SinglePatientViewController: SinglePatientView {
         DispatchQueue.main.async {
             self.singlePatientTableView.reloadData()
         }
+    }
+    
+    func popBack() {
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

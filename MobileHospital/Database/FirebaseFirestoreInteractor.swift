@@ -109,4 +109,137 @@ class FirebaseFirestoreInteractor {
         }
     }
     
+    static func dischargePatient(patient: Patient, complition: @escaping (() -> Void)) {
+        db.collection("patients").whereField("id", isEqualTo: patient.id).getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting document document: \(err)")
+            } else {
+                guard let docID = querySnapshot?.documents.first?.documentID else { return }
+                let doc = db.collection("patients").document(docID)
+                doc.updateData([
+                    "DayOfDischarge": Date().convertDateToNormalDateString()
+                ]) { err in
+                    if let err = err {
+                        print("Error updating document: \(err)")
+                    } else {
+                        complition()
+                        decreasePatientsCountAtDoctor(patient: patient)
+                        Events.MessageEvent.post("Пациент выписан")
+                        print("Document successfully updated")
+                    }
+                }
+            }
+        }
+    }
+    
+    static private func decreasePatientsCountAtDoctor(patient: Patient) {
+        db.collection("doctors").whereField("id", isEqualTo: patient.doctor).getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting document: \(err)")
+            } else {
+                guard let id = querySnapshot?.documents.first?.documentID else { return }
+                guard let docData = querySnapshot?.documents.first?.data() else { return }
+                guard let numOfPats: String = docData["NumberOfPatients"] as? String else { return }
+                guard let num = Int(numOfPats) else { return }
+                let doc = db.collection("doctors").document(id)
+                doc.updateData([
+                    "NumberOfPatients": "\(num - 1)"
+                ]) { err in
+                    if let err = err {
+                        print("Error updating counter: \(err)")
+                    } else {
+                        print("Doctor counter successfully updated")
+                    }
+                }
+            }
+        }
+    }
+    
+    static func getLastId(collection: String, complition: @escaping ((Int) -> Void)) {
+        readAllDocuments(collection: collection) { (documents) in
+            var maxId = 0
+            for document in documents {
+                guard let doc = document.value as? [String: Any] else { return }
+                guard let id = doc["id"] as? String else { return }
+                guard let idInt = Int(id) else { return }
+                if idInt > maxId {
+                    maxId = idInt
+                }
+            }
+            complition(maxId)
+        }
+    }
+    
+    static func increasePatientsCountAtDoctor() {
+        guard let doctor: Doctor = SessionData.SelectedDoctor.getValue() else { return }
+        db.collection("doctors").whereField("id", isEqualTo: doctor.id).getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting document: \(err)")
+            } else {
+                guard let id = querySnapshot?.documents.first?.documentID else { return }
+                guard let docData = querySnapshot?.documents.first?.data() else { return }
+                guard let numOfPats: String = docData["NumberOfPatients"] as? String else { return }
+                guard let num = Int(numOfPats) else { return }
+                let doc = db.collection("doctors").document(id)
+                doc.updateData([
+                    "NumberOfPatients": "\(num + 1)"
+                ]) { err in
+                    if let err = err {
+                        print("Error updating counter: \(err)")
+                    } else {
+                        print("Doctor counter successfully updated")
+                    }
+                }
+            }
+        }
+    }
+    
+    static func addOperationToPatient(patient: Patient, id: String) {
+        db.collection("patients").whereField("id", isEqualTo: patient.id).getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting document: \(err)")
+            } else {
+                guard let docId = querySnapshot?.documents.first?.documentID else { return }
+                guard let docData = querySnapshot?.documents.first?.data() else { return }
+                guard let operations = docData["Operations"] as? [String] else { return }
+                var opers = operations
+                opers.append(id)
+                let doc = db.collection("patients").document(docId)
+                doc.updateData([
+                    "Operations": opers
+                ]) { err in
+                    if let err = err {
+                        print("Error updating operations: \(err)")
+                    } else {
+                        print("Operations successfully updated")
+                    }
+                }
+            }
+        }
+    }
+    
+    static func addDrugToPatient(patient: Patient, id: String) {
+        db.collection("patients").whereField("id", isEqualTo: patient.id).getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting document: \(err)")
+            } else {
+                guard let docId = querySnapshot?.documents.first?.documentID else { return }
+                guard let docData = querySnapshot?.documents.first?.data() else { return }
+                guard let drugs = docData["Drugs"] as? [String] else { return }
+                var drgs = drugs
+                drgs.append(id)
+                let doc = db.collection("patients").document(docId)
+                doc.updateData([
+                    "Drugs": drgs
+                ]) { err in
+                    if let err = err {
+                        print("Error updating drugs: \(err)")
+                    } else {
+                        print("Drugs successfully updated")
+                    }
+                }
+            }
+        }
+    }
+    
 }

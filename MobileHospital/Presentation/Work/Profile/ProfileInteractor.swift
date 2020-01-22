@@ -10,9 +10,13 @@ import UIKit
 
 class ProfileInteractor: BaseInteractor {
  
-    func getDoctorData() -> Doctor? {
-        guard let doctorData: Doctor = SessionData.SelectedDoctor.getValue() else { return nil }
-        return doctorData
+    func getDoctorData(complition: @escaping ((Doctor) -> Void)){
+        guard let doctorData: Doctor = SessionData.SelectedDoctor.getValue() else { return }
+        FirebaseFirestoreInteractor.readSingleDocument(collection: "doctors", id: doctorData.id) { (recieved) in
+            let doctor = Doctor(dictionary: recieved)
+            SessionData.SelectedDoctor.saveValue(doctor)
+            complition(doctor)
+        }
     }
     
 }

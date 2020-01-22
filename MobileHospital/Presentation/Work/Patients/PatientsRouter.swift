@@ -16,4 +16,8 @@ class PatientsRouter: BaseRouter {
         }
     }
     
+    func toAddPatient() {
+        UIViewController.MobileHospital.AddPatientViewController.show()
+    }
+    
 }

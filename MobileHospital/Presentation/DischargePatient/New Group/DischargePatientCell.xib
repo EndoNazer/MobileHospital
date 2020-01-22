@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DischargePatientCell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPE-Ki-iNq">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w6v-oi-Wlg">
+                            <rect key="frame" x="15" y="61" width="384" height="150"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="8YP-C6-hOR"/>
+                            </constraints>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keM-6a-TIm">
+                            <rect key="frame" x="0.0" y="226" width="414" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выписать пациента" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBi-QW-M2P">
+                                    <rect key="frame" x="128.5" y="14.5" width="157" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.32941176470588235" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="JBi-QW-M2P" firstAttribute="centerX" secondItem="keM-6a-TIm" secondAttribute="centerX" id="CEa-Ze-gtr"/>
+                                <constraint firstItem="JBi-QW-M2P" firstAttribute="centerY" secondItem="keM-6a-TIm" secondAttribute="centerY" id="U28-jg-0Ar"/>
+                                <constraint firstAttribute="height" constant="50" id="gIN-jG-vex"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заполните рекоммендацию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ey-0A-mYB">
+                            <rect key="frame" x="30" y="15" width="354" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="w6v-oi-Wlg" secondAttribute="trailing" constant="15" id="CgF-fA-0Mk"/>
+                        <constraint firstItem="keM-6a-TIm" firstAttribute="leading" secondItem="nPE-Ki-iNq" secondAttribute="leading" id="SLS-Mn-3vB"/>
+                        <constraint firstItem="keM-6a-TIm" firstAttribute="top" secondItem="w6v-oi-Wlg" secondAttribute="bottom" constant="15" id="WIY-Zr-MhW"/>
+                        <constraint firstItem="w6v-oi-Wlg" firstAttribute="top" secondItem="6ey-0A-mYB" secondAttribute="bottom" constant="15" id="Y15-36-vZ0"/>
+                        <constraint firstAttribute="trailing" secondItem="keM-6a-TIm" secondAttribute="trailing" id="ZLR-D9-s8H"/>
+                        <constraint firstItem="w6v-oi-Wlg" firstAttribute="leading" secondItem="nPE-Ki-iNq" secondAttribute="leading" constant="15" id="bHW-u3-lTe"/>
+                        <constraint firstAttribute="trailing" secondItem="6ey-0A-mYB" secondAttribute="trailing" constant="30" id="fe9-Oz-D87"/>
+                        <constraint firstItem="6ey-0A-mYB" firstAttribute="top" secondItem="nPE-Ki-iNq" secondAttribute="top" constant="15" id="sI1-ot-1Lk"/>
+                        <constraint firstItem="6ey-0A-mYB" firstAttribute="leading" secondItem="nPE-Ki-iNq" secondAttribute="leading" constant="30" id="wc0-fI-OO2"/>
+                        <constraint firstAttribute="bottom" secondItem="keM-6a-TIm" secondAttribute="bottom" id="yr2-V0-xIx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nPE-Ki-iNq" secondAttribute="bottom" id="8qd-QZ-n8C"/>
+                <constraint firstItem="nPE-Ki-iNq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F7d-Ua-S5E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nPE-Ki-iNq" secondAttribute="trailing" id="M0D-Gi-3VC"/>
+                <constraint firstItem="nPE-Ki-iNq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NZ6-Ps-MVJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="actionView" destination="keM-6a-TIm" id="qSN-nw-JTZ"/>
+                <outlet property="recommendationView" destination="w6v-oi-Wlg" id="HPL-7g-Ykd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="312.05357142857139"/>
+        </view>
+    </objects>
+</document>

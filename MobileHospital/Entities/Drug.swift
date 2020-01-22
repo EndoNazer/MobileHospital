@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Drug {
-    var id: String = ""
+class Drug: BaseModel {
     var name: String = ""
     var specialization: String = ""
     var rating: String = ""
     var image: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.name = dictionary["Name"] as? String ?? ""
         self.specialization = dictionary["Specialization"] as? String ?? ""
@@ -24,6 +24,7 @@ class Drug {
     }
     
     init(id: String, name: String, specialization: String, rating: String, image: String) {
+        super.init()
         self.id = id
         self.name = name
         self.specialization = specialization
@@ -31,7 +32,7 @@ class Drug {
         self.image = image
     }
     
-    init() {
+    override init() {
         
     }
     

@@ -8,30 +8,28 @@
 
 import Foundation
 
-class Operation {
-    var id: String = ""
+class Operation: BaseModel {
     var name: String = ""
-    var specialization: String = ""
     var patient: String = ""
     var date: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.name = dictionary["Name"] as? String ?? ""
-        self.specialization = dictionary["Specialization"] as? String ?? ""
         self.patient = dictionary["Patient"] as? String ?? ""
         self.date = dictionary["Date"] as? String ?? ""
     }
     
-    init(id: String, name: String, specialization: String, patient: String, date: String) {
+    init(id: String, name: String, patient: String, date: String) {
+        super.init()
         self.id = id
         self.name = name
-        self.specialization = specialization
         self.patient = patient
         self.date = date
     }
     
-    init() {
+    override init() {
         
     }
     
@@ -39,7 +37,6 @@ class Operation {
         return [
             "id": id,
             "Name": name,
-            "Specialization": specialization,
             "Patient": patient,
             "Date": date
         ]

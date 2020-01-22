@@ -8,8 +8,7 @@
 
 import Foundation
 
-class MonthlyReport {
-    var id: String = ""
+class MonthlyReport: BaseModel {
     var startDate: String = ""
     var endDate: String = ""
     var acceptedPatients: [String] = []
@@ -18,6 +17,7 @@ class MonthlyReport {
     var dischargedPatientsNumber: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.startDate = dictionary["StartDate"] as? String ?? ""
         self.endDate = dictionary["EndDate"] as? String ?? ""
@@ -28,6 +28,7 @@ class MonthlyReport {
     }
     
     init(id: String, startDate: String, endDate: String, acceptedPatients: [String], acceptedPatientsNumber: String, dischargedPatients: [String], dischargedPatientsNumber: String) {
+        super.init()
         self.id = id
         self.startDate = startDate
         self.endDate = endDate
@@ -37,7 +38,7 @@ class MonthlyReport {
         self.dischargedPatientsNumber = dischargedPatientsNumber
     }
     
-    init() {
+    override init() {
         
     }
     

@@ -12,8 +12,10 @@ class SinglePatientInteractor: BaseInteractor {
     
     func getImage(image: String, complition: @escaping ((UIImage) -> Void)) {
         Events.ShowLoader.post()
-        UIImage().downloaded(from: image) { (img) in
+        UIImage().downloaded(from: image, complition: { (img) in
             complition(img)
+            Events.HideLoader.post()
+        }) {
             Events.HideLoader.post()
         }
     }

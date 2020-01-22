@@ -9,19 +9,28 @@
 import UIKit
 
 extension UIImage {
-    func downloaded(from url: URL, complition: @escaping ((UIImage) -> Void)) {
+    
+    func downloaded(from url: URL, complition: @escaping ((UIImage) -> Void), whenError: @escaping (() -> Void)) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let img = UIImage(data: data)
-                else { return }
+                else {
+                    whenError()
+                    return
+            }
             complition(img)
         }.resume()
     }
-    func downloaded(from link: String, complition: @escaping ((UIImage) -> Void)) {
-        guard let url = URL(string: link) else { return }
-        downloaded(from: url, complition: complition)
+    
+    func downloaded(from link: String, complition: @escaping ((UIImage) -> Void), whenError: @escaping (() -> Void)) {
+        guard let url = URL(string: link) else {
+            whenError()
+            return
+        }
+        downloaded(from: url, complition: complition, whenError: whenError)
     }
+    
 }

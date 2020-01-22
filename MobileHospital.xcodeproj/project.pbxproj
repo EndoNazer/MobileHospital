@@ -9,6 +9,36 @@
 /* Begin PBXBuildFile section */
 		0981B74D0D3DF8FB16C1924B /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */; };
 		0990E3975E708998751A9786 /* Pods_MobileHospitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */; };
+		A5032EFE23D785AA0032BC93 /* FirebaseStorageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032EFD23D785AA0032BC93 /* FirebaseStorageInteractor.swift */; };
+		A5032F2223D83A350032BC93 /* FileManagerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2123D83A350032BC93 /* FileManagerInteractor.swift */; };
+		A5032F2423D844300032BC93 /* ActionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2323D844300032BC93 /* ActionsPresenter.swift */; };
+		A5032F2623D844450032BC93 /* ActionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2523D844450032BC93 /* ActionsInteractor.swift */; };
+		A5032F2823D844540032BC93 /* ActionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2723D844540032BC93 /* ActionsRouter.swift */; };
+		A5032F2A23D8445D0032BC93 /* ActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2923D8445D0032BC93 /* ActionsView.swift */; };
+		A5032F3023D84B9D0032BC93 /* SelectDrugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2F23D84B9D0032BC93 /* SelectDrugViewController.swift */; };
+		A5032F3223D84BA60032BC93 /* SelectDrugPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3123D84BA60032BC93 /* SelectDrugPresenter.swift */; };
+		A5032F3423D84BB10032BC93 /* SelectDrugInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3323D84BB10032BC93 /* SelectDrugInteractor.swift */; };
+		A5032F3623D84BBA0032BC93 /* SelectDrugRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3523D84BBA0032BC93 /* SelectDrugRouter.swift */; };
+		A5032F3823D84BC20032BC93 /* SelectDrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3723D84BC20032BC93 /* SelectDrugView.swift */; };
+		A5032F3A23D84BD90032BC93 /* ScheduleOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3923D84BD90032BC93 /* ScheduleOperationViewController.swift */; };
+		A5032F3C23D84BE40032BC93 /* ScheduleOperationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3B23D84BE40032BC93 /* ScheduleOperationPresenter.swift */; };
+		A5032F3E23D84BF00032BC93 /* ScheduleOperationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3D23D84BF00032BC93 /* ScheduleOperationInteractor.swift */; };
+		A5032F4023D84BF90032BC93 /* ScheduleOperationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F3F23D84BF90032BC93 /* ScheduleOperationRouter.swift */; };
+		A5032F4223D84C010032BC93 /* ScheduleOperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F4123D84C010032BC93 /* ScheduleOperationView.swift */; };
+		A5032F4623D850DB0032BC93 /* ScheduleOperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F4523D850DB0032BC93 /* ScheduleOperationCell.swift */; };
+		A5032F4823D850F30032BC93 /* ScheduleOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5032F4723D850F30032BC93 /* ScheduleOperationCell.xib */; };
+		A5032F4A23D850FB0032BC93 /* ScheduleOperationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F4923D850FB0032BC93 /* ScheduleOperationCellModel.swift */; };
+		A5032F4E23D86D240032BC93 /* SelectDrugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F4D23D86D240032BC93 /* SelectDrugCell.swift */; };
+		A5032F5023D86D2D0032BC93 /* SelectDrugCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5032F4F23D86D2D0032BC93 /* SelectDrugCell.xib */; };
+		A5032F5223D86D370032BC93 /* SelectDrugCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F5123D86D370032BC93 /* SelectDrugCellModel.swift */; };
+		A5032F5523D883930032BC93 /* DischargePatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F5423D883930032BC93 /* DischargePatientViewController.swift */; };
+		A5032F5A23D883B10032BC93 /* DischargePatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F5923D883B10032BC93 /* DischargePatientCell.swift */; };
+		A5032F5C23D883BA0032BC93 /* DischargePatientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5032F5B23D883BA0032BC93 /* DischargePatientCell.xib */; };
+		A5032F5E23D883C90032BC93 /* DischargePatientCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F5D23D883C90032BC93 /* DischargePatientCellModel.swift */; };
+		A5032F6023D883D70032BC93 /* DischargePatientPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F5F23D883D70032BC93 /* DischargePatientPresenter.swift */; };
+		A5032F6223D884080032BC93 /* DischargePatientInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F6123D884080032BC93 /* DischargePatientInteractor.swift */; };
+		A5032F6423D884190032BC93 /* DischargePatientRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F6323D884190032BC93 /* DischargePatientRouter.swift */; };
+		A5032F6623D884260032BC93 /* DischargePatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F6523D884260032BC93 /* DischargePatientView.swift */; };
 		A503552B238575A700FDAE12 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5035529238575A600FDAE12 /* UIViewController.swift */; };
 		A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503552A238575A700FDAE12 /* UIStoryboard.swift */; };
 		A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503552D23869C1E00FDAE12 /* GlobalRouter.swift */; };
@@ -98,6 +128,22 @@
 		A5C8D0A523C5F9C900F33B62 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A423C5F9C900F33B62 /* BaseModel.swift */; };
 		A5C8D0A723C5FEAB00F33B62 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A623C5FEAB00F33B62 /* Array.swift */; };
 		A5C8D0A923C63A0500F33B62 /* UserDefaultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8D0A823C63A0500F33B62 /* UserDefaultsInteractor.swift */; };
+		A5DFFAF923D6E76000B630B6 /* SinglePatientInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFAF823D6E76000B630B6 /* SinglePatientInfoCell.swift */; };
+		A5DFFAFB23D6E76900B630B6 /* SinglePatientInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFAFA23D6E76900B630B6 /* SinglePatientInfoCellModel.swift */; };
+		A5DFFAFD23D6E77F00B630B6 /* SinglePatientInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DFFAFC23D6E77F00B630B6 /* SinglePatientInfoCell.xib */; };
+		A5DFFAFF23D6EE5600B630B6 /* AddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFAFE23D6EE5600B630B6 /* AddPatientViewController.swift */; };
+		A5DFFB0223D6EE6B00B630B6 /* AddPatientPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB0123D6EE6B00B630B6 /* AddPatientPresenter.swift */; };
+		A5DFFB0423D6EE7D00B630B6 /* AddPatientInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB0323D6EE7D00B630B6 /* AddPatientInteractor.swift */; };
+		A5DFFB0623D6EE8700B630B6 /* AddPatientRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB0523D6EE8700B630B6 /* AddPatientRouter.swift */; };
+		A5DFFB0823D6EE8E00B630B6 /* AddPatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB0723D6EE8E00B630B6 /* AddPatientView.swift */; };
+		A5DFFB0A23D6EEFB00B630B6 /* AddPatient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DFFB0923D6EEFB00B630B6 /* AddPatient.storyboard */; };
+		A5DFFB0E23D6F33100B630B6 /* AddPatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB0D23D6F33100B630B6 /* AddPatientCell.swift */; };
+		A5DFFB1023D6F33800B630B6 /* AddPatientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DFFB0F23D6F33800B630B6 /* AddPatientCell.xib */; };
+		A5DFFB1223D6F35300B630B6 /* AddPatientCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB1123D6F35300B630B6 /* AddPatientCellModel.swift */; };
+		A5DFFB1423D712B000B630B6 /* DocumentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB1323D712B000B630B6 /* DocumentsPresenter.swift */; };
+		A5DFFB1623D712BC00B630B6 /* DocumentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB1523D712BC00B630B6 /* DocumentsInteractor.swift */; };
+		A5DFFB1823D712C600B630B6 /* DocumentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB1723D712C600B630B6 /* DocumentsRouter.swift */; };
+		A5DFFB1A23D712CE00B630B6 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB1923D712CE00B630B6 /* DocumentsView.swift */; };
 		B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +171,36 @@
 		34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.release.xcconfig"; sourceTree = "<group>"; };
 		8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5032EFD23D785AA0032BC93 /* FirebaseStorageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageInteractor.swift; sourceTree = "<group>"; };
+		A5032F2123D83A350032BC93 /* FileManagerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerInteractor.swift; sourceTree = "<group>"; };
+		A5032F2323D844300032BC93 /* ActionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsPresenter.swift; sourceTree = "<group>"; };
+		A5032F2523D844450032BC93 /* ActionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsInteractor.swift; sourceTree = "<group>"; };
+		A5032F2723D844540032BC93 /* ActionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsRouter.swift; sourceTree = "<group>"; };
+		A5032F2923D8445D0032BC93 /* ActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsView.swift; sourceTree = "<group>"; };
+		A5032F2F23D84B9D0032BC93 /* SelectDrugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugViewController.swift; sourceTree = "<group>"; };
+		A5032F3123D84BA60032BC93 /* SelectDrugPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugPresenter.swift; sourceTree = "<group>"; };
+		A5032F3323D84BB10032BC93 /* SelectDrugInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugInteractor.swift; sourceTree = "<group>"; };
+		A5032F3523D84BBA0032BC93 /* SelectDrugRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugRouter.swift; sourceTree = "<group>"; };
+		A5032F3723D84BC20032BC93 /* SelectDrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugView.swift; sourceTree = "<group>"; };
+		A5032F3923D84BD90032BC93 /* ScheduleOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationViewController.swift; sourceTree = "<group>"; };
+		A5032F3B23D84BE40032BC93 /* ScheduleOperationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationPresenter.swift; sourceTree = "<group>"; };
+		A5032F3D23D84BF00032BC93 /* ScheduleOperationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationInteractor.swift; sourceTree = "<group>"; };
+		A5032F3F23D84BF90032BC93 /* ScheduleOperationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationRouter.swift; sourceTree = "<group>"; };
+		A5032F4123D84C010032BC93 /* ScheduleOperationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationView.swift; sourceTree = "<group>"; };
+		A5032F4523D850DB0032BC93 /* ScheduleOperationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationCell.swift; sourceTree = "<group>"; };
+		A5032F4723D850F30032BC93 /* ScheduleOperationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleOperationCell.xib; sourceTree = "<group>"; };
+		A5032F4923D850FB0032BC93 /* ScheduleOperationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationCellModel.swift; sourceTree = "<group>"; };
+		A5032F4D23D86D240032BC93 /* SelectDrugCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugCell.swift; sourceTree = "<group>"; };
+		A5032F4F23D86D2D0032BC93 /* SelectDrugCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectDrugCell.xib; sourceTree = "<group>"; };
+		A5032F5123D86D370032BC93 /* SelectDrugCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrugCellModel.swift; sourceTree = "<group>"; };
+		A5032F5423D883930032BC93 /* DischargePatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientViewController.swift; sourceTree = "<group>"; };
+		A5032F5923D883B10032BC93 /* DischargePatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientCell.swift; sourceTree = "<group>"; };
+		A5032F5B23D883BA0032BC93 /* DischargePatientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DischargePatientCell.xib; sourceTree = "<group>"; };
+		A5032F5D23D883C90032BC93 /* DischargePatientCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientCellModel.swift; sourceTree = "<group>"; };
+		A5032F5F23D883D70032BC93 /* DischargePatientPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientPresenter.swift; sourceTree = "<group>"; };
+		A5032F6123D884080032BC93 /* DischargePatientInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientInteractor.swift; sourceTree = "<group>"; };
+		A5032F6323D884190032BC93 /* DischargePatientRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientRouter.swift; sourceTree = "<group>"; };
+		A5032F6523D884260032BC93 /* DischargePatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DischargePatientView.swift; sourceTree = "<group>"; };
 		A5035529238575A600FDAE12 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = SOURCE_ROOT; };
 		A503552A238575A700FDAE12 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = SOURCE_ROOT; };
 		A503552D23869C1E00FDAE12 /* GlobalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
@@ -220,6 +296,22 @@
 		A5C8D0A423C5F9C900F33B62 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A5C8D0A623C5FEAB00F33B62 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		A5C8D0A823C63A0500F33B62 /* UserDefaultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteractor.swift; sourceTree = "<group>"; };
+		A5DFFAF823D6E76000B630B6 /* SinglePatientInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePatientInfoCell.swift; sourceTree = "<group>"; };
+		A5DFFAFA23D6E76900B630B6 /* SinglePatientInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePatientInfoCellModel.swift; sourceTree = "<group>"; };
+		A5DFFAFC23D6E77F00B630B6 /* SinglePatientInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinglePatientInfoCell.xib; sourceTree = "<group>"; };
+		A5DFFAFE23D6EE5600B630B6 /* AddPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientViewController.swift; sourceTree = "<group>"; };
+		A5DFFB0123D6EE6B00B630B6 /* AddPatientPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientPresenter.swift; sourceTree = "<group>"; };
+		A5DFFB0323D6EE7D00B630B6 /* AddPatientInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientInteractor.swift; sourceTree = "<group>"; };
+		A5DFFB0523D6EE8700B630B6 /* AddPatientRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientRouter.swift; sourceTree = "<group>"; };
+		A5DFFB0723D6EE8E00B630B6 /* AddPatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientView.swift; sourceTree = "<group>"; };
+		A5DFFB0923D6EEFB00B630B6 /* AddPatient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPatient.storyboard; sourceTree = "<group>"; };
+		A5DFFB0D23D6F33100B630B6 /* AddPatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientCell.swift; sourceTree = "<group>"; };
+		A5DFFB0F23D6F33800B630B6 /* AddPatientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPatientCell.xib; sourceTree = "<group>"; };
+		A5DFFB1123D6F35300B630B6 /* AddPatientCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientCellModel.swift; sourceTree = "<group>"; };
+		A5DFFB1323D712B000B630B6 /* DocumentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsPresenter.swift; sourceTree = "<group>"; };
+		A5DFFB1523D712BC00B630B6 /* DocumentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsInteractor.swift; sourceTree = "<group>"; };
+		A5DFFB1723D712C600B630B6 /* DocumentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsRouter.swift; sourceTree = "<group>"; };
+		A5DFFB1923D712CE00B630B6 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,6 +368,100 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A5032F2B23D84A870032BC93 /* SelectDrug */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F4C23D86CA70032BC93 /* CellModels */,
+				A5032F4B23D86C9F0032BC93 /* Cells */,
+				A5032F2F23D84B9D0032BC93 /* SelectDrugViewController.swift */,
+				A5032F3123D84BA60032BC93 /* SelectDrugPresenter.swift */,
+				A5032F3323D84BB10032BC93 /* SelectDrugInteractor.swift */,
+				A5032F3523D84BBA0032BC93 /* SelectDrugRouter.swift */,
+				A5032F3723D84BC20032BC93 /* SelectDrugView.swift */,
+			);
+			path = SelectDrug;
+			sourceTree = "<group>";
+		};
+		A5032F2E23D84AFF0032BC93 /* ScheduleOperation */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F4323D850BF0032BC93 /* Cells */,
+				A5032F4423D850C20032BC93 /* CellModels */,
+				A5032F3923D84BD90032BC93 /* ScheduleOperationViewController.swift */,
+				A5032F3B23D84BE40032BC93 /* ScheduleOperationPresenter.swift */,
+				A5032F3D23D84BF00032BC93 /* ScheduleOperationInteractor.swift */,
+				A5032F3F23D84BF90032BC93 /* ScheduleOperationRouter.swift */,
+				A5032F4123D84C010032BC93 /* ScheduleOperationView.swift */,
+			);
+			path = ScheduleOperation;
+			sourceTree = "<group>";
+		};
+		A5032F4323D850BF0032BC93 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F4523D850DB0032BC93 /* ScheduleOperationCell.swift */,
+				A5032F4723D850F30032BC93 /* ScheduleOperationCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A5032F4423D850C20032BC93 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F4923D850FB0032BC93 /* ScheduleOperationCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+		A5032F4B23D86C9F0032BC93 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F5123D86D370032BC93 /* SelectDrugCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A5032F4C23D86CA70032BC93 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F4D23D86D240032BC93 /* SelectDrugCell.swift */,
+				A5032F4F23D86D2D0032BC93 /* SelectDrugCell.xib */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+		A5032F5323D883620032BC93 /* DischargePatient */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F5623D883970032BC93 /* Cells */,
+				A5032F5723D8839A0032BC93 /* CellModels */,
+				A5032F5423D883930032BC93 /* DischargePatientViewController.swift */,
+				A5032F5F23D883D70032BC93 /* DischargePatientPresenter.swift */,
+				A5032F6123D884080032BC93 /* DischargePatientInteractor.swift */,
+				A5032F6323D884190032BC93 /* DischargePatientRouter.swift */,
+				A5032F6523D884260032BC93 /* DischargePatientView.swift */,
+			);
+			path = DischargePatient;
+			sourceTree = "<group>";
+		};
+		A5032F5623D883970032BC93 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F5923D883B10032BC93 /* DischargePatientCell.swift */,
+				A5032F5B23D883BA0032BC93 /* DischargePatientCell.xib */,
+			);
+			name = Cells;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A5032F5723D8839A0032BC93 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5032F5D23D883C90032BC93 /* DischargePatientCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
 		A503551F2385736E00FDAE12 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +482,8 @@
 			children = (
 				A5C8D0A823C63A0500F33B62 /* UserDefaultsInteractor.swift */,
 				A5B8CF3823C88E840054C2B3 /* FirebaseFirestoreInteractor.swift */,
+				A5032EFD23D785AA0032BC93 /* FirebaseStorageInteractor.swift */,
+				A5032F2123D83A350032BC93 /* FileManagerInteractor.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -328,10 +516,15 @@
 				A580B7A72383DF4F003BCF7E /* LaunchScreen.storyboard */,
 				A58BE9A323992C38008FC44B /* Work.storyboard */,
 				A5B8CF9723CE40880054C2B3 /* SinglePatient.storyboard */,
+				A5DFFB0923D6EEFB00B630B6 /* AddPatient.storyboard */,
 				A5035526238574B300FDAE12 /* Main */,
 				A503555C2386B07700FDAE12 /* Authorization */,
 				A58BE9A723992C48008FC44B /* Work */,
 				A5B8CF9623CE40630054C2B3 /* SinglePatient */,
+				A5DFFB0023D6EE5900B630B6 /* AddPatient */,
+				A5032F2B23D84A870032BC93 /* SelectDrug */,
+				A5032F2E23D84AFF0032BC93 /* ScheduleOperation */,
+				A5032F5323D883620032BC93 /* DischargePatient */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -542,6 +735,10 @@
 			isa = PBXGroup;
 			children = (
 				A58BE9B123993749008FC44B /* ActionsViewController.swift */,
+				A5032F2323D844300032BC93 /* ActionsPresenter.swift */,
+				A5032F2523D844450032BC93 /* ActionsInteractor.swift */,
+				A5032F2723D844540032BC93 /* ActionsRouter.swift */,
+				A5032F2923D8445D0032BC93 /* ActionsView.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -550,6 +747,10 @@
 			isa = PBXGroup;
 			children = (
 				A58BE9B32399376A008FC44B /* DocumentsViewController.swift */,
+				A5DFFB1323D712B000B630B6 /* DocumentsPresenter.swift */,
+				A5DFFB1523D712BC00B630B6 /* DocumentsInteractor.swift */,
+				A5DFFB1723D712C600B630B6 /* DocumentsRouter.swift */,
+				A5DFFB1923D712CE00B630B6 /* DocumentsView.swift */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -640,6 +841,8 @@
 		A5B8CF9923CE40A30054C2B3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A5DFFAF823D6E76000B630B6 /* SinglePatientInfoCell.swift */,
+				A5DFFAFC23D6E77F00B630B6 /* SinglePatientInfoCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -647,6 +850,38 @@
 		A5B8CF9A23CE40B20054C2B3 /* CellModels */ = {
 			isa = PBXGroup;
 			children = (
+				A5DFFAFA23D6E76900B630B6 /* SinglePatientInfoCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+		A5DFFB0023D6EE5900B630B6 /* AddPatient */ = {
+			isa = PBXGroup;
+			children = (
+				A5DFFB0B23D6F31500B630B6 /* Cells */,
+				A5DFFB0C23D6F31900B630B6 /* CellModels */,
+				A5DFFAFE23D6EE5600B630B6 /* AddPatientViewController.swift */,
+				A5DFFB0123D6EE6B00B630B6 /* AddPatientPresenter.swift */,
+				A5DFFB0323D6EE7D00B630B6 /* AddPatientInteractor.swift */,
+				A5DFFB0523D6EE8700B630B6 /* AddPatientRouter.swift */,
+				A5DFFB0723D6EE8E00B630B6 /* AddPatientView.swift */,
+			);
+			path = AddPatient;
+			sourceTree = "<group>";
+		};
+		A5DFFB0B23D6F31500B630B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5DFFB0D23D6F33100B630B6 /* AddPatientCell.swift */,
+				A5DFFB0F23D6F33800B630B6 /* AddPatientCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A5DFFB0C23D6F31900B630B6 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5DFFB1123D6F35300B630B6 /* AddPatientCellModel.swift */,
 			);
 			path = CellModels;
 			sourceTree = "<group>";
@@ -762,18 +997,24 @@
 			files = (
 				A5B8CF7C23CDC1AE0054C2B3 /* PatientCell.xib in Resources */,
 				A5B8CF9823CE40880054C2B3 /* SinglePatient.storyboard in Resources */,
+				A5032F5023D86D2D0032BC93 /* SelectDrugCell.xib in Resources */,
 				A5B8CF6223CC9F350054C2B3 /* PhotoCell.xib in Resources */,
 				A580B7A92383DF4F003BCF7E /* LaunchScreen.storyboard in Resources */,
+				A5DFFAFD23D6E77F00B630B6 /* SinglePatientInfoCell.xib in Resources */,
 				A50355602386B10A00FDAE12 /* Authorization.storyboard in Resources */,
 				A5B8CF6A23CCE6C70054C2B3 /* ActionCell.xib in Resources */,
+				A5032F5C23D883BA0032BC93 /* DischargePatientCell.xib in Resources */,
 				A58BE9BA239A64E7008FC44B /* Cloud-Bold.otf in Resources */,
+				A5032F4823D850F30032BC93 /* ScheduleOperationCell.xib in Resources */,
 				A580B7CD2383DFC7003BCF7E /* GoogleService-Info.plist in Resources */,
 				A580B7A62383DF4F003BCF7E /* Assets.xcassets in Resources */,
+				A5DFFB0A23D6EEFB00B630B6 /* AddPatient.storyboard in Resources */,
 				A5B8CF6823CCACEC0054C2B3 /* NSPACell.xib in Resources */,
 				A5B8CF5A23CC78AB0054C2B3 /* SingleInfoCell.xib in Resources */,
 				A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */,
 				A58BE9A523992C38008FC44B /* Work.storyboard in Resources */,
 				A58BE9B9239A64E7008FC44B /* Cloud-Light.otf in Resources */,
+				A5DFFB1023D6F33800B630B6 /* AddPatientCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,75 +1142,115 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5032F4023D84BF90032BC93 /* ScheduleOperationRouter.swift in Sources */,
 				A50355642386B88600FDAE12 /* UIView.swift in Sources */,
+				A5DFFB1623D712BC00B630B6 /* DocumentsInteractor.swift in Sources */,
 				A58BE9AB23993443008FC44B /* PatientsViewController.swift in Sources */,
 				A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */,
 				A503554B2386A40C00FDAE12 /* UseCase.swift in Sources */,
 				A5B8CFA223CE40FA0054C2B3 /* SinglePatientRouter.swift in Sources */,
+				A5032F2623D844450032BC93 /* ActionsInteractor.swift in Sources */,
 				A5B8CF8A23CDC9050054C2B3 /* MonthlyReport.swift in Sources */,
 				A50355472386A31500FDAE12 /* BasePresenter.swift in Sources */,
 				A5C8D09B23C5F06400F33B62 /* AuthorizationRouter.swift in Sources */,
+				A5032F3823D84BC20032BC93 /* SelectDrugView.swift in Sources */,
+				A5032F3E23D84BF00032BC93 /* ScheduleOperationInteractor.swift in Sources */,
 				A503554D2386A43500FDAE12 /* Response.swift in Sources */,
 				A5B8CF3F23CC68E40054C2B3 /* ProfileRouter.swift in Sources */,
 				A5B8CF5623CC78890054C2B3 /* SingleInfoCellModel.swift in Sources */,
 				A50355532386A4F400FDAE12 /* Events.swift in Sources */,
 				A5B8CF5123CC78100054C2B3 /* ActionCellModel.swift in Sources */,
 				A5B8CF6023CC9EAF0054C2B3 /* PhotoCell.swift in Sources */,
+				A5032F4623D850DB0032BC93 /* ScheduleOperationCell.swift in Sources */,
+				A5032F2A23D8445D0032BC93 /* ActionsView.swift in Sources */,
 				A5B8CF6423CCA12B0054C2B3 /* UIImage.swift in Sources */,
 				A5C8D0A723C5FEAB00F33B62 /* Array.swift in Sources */,
 				A5B8CF5823CC78A00054C2B3 /* SingleInfoCell.swift in Sources */,
 				A5B8CF8823CDC8FA0054C2B3 /* Operation.swift in Sources */,
 				A503553F2386A24A00FDAE12 /* MainView.swift in Sources */,
+				A5032F6223D884080032BC93 /* DischargePatientInteractor.swift in Sources */,
+				A5032F2223D83A350032BC93 /* FileManagerInteractor.swift in Sources */,
 				A503553523869D4500FDAE12 /* SharedData.swift in Sources */,
+				A5DFFAFB23D6E76900B630B6 /* SinglePatientInfoCellModel.swift in Sources */,
 				A5B8CF8223CDC8CA0054C2B3 /* Doctor.swift in Sources */,
+				A5032EFE23D785AA0032BC93 /* FirebaseStorageInteractor.swift in Sources */,
+				A5DFFAFF23D6EE5600B630B6 /* AddPatientViewController.swift in Sources */,
+				A5032F4223D84C010032BC93 /* ScheduleOperationView.swift in Sources */,
+				A5032F3A23D84BD90032BC93 /* ScheduleOperationViewController.swift in Sources */,
 				A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */,
 				A503553323869D1600FDAE12 /* SessionData.swift in Sources */,
 				A5B8CF9C23CE40CB0054C2B3 /* SinglePatientViewController.swift in Sources */,
+				A5032F5523D883930032BC93 /* DischargePatientViewController.swift in Sources */,
+				A5DFFB0623D6EE8700B630B6 /* AddPatientRouter.swift in Sources */,
 				A5B8CF3B23CC68C90054C2B3 /* ProfilePresenter.swift in Sources */,
+				A5DFFB1A23D712CE00B630B6 /* DocumentsView.swift in Sources */,
+				A5DFFB1423D712B000B630B6 /* DocumentsPresenter.swift in Sources */,
 				A5B8CF7423CDBA6E0054C2B3 /* PatientsView.swift in Sources */,
+				A5DFFB0223D6EE6B00B630B6 /* AddPatientPresenter.swift in Sources */,
 				A5B8CF5D23CC797E0054C2B3 /* UITableViewProtocols.swift in Sources */,
 				A5C8D09723C5EE1E00F33B62 /* AuthorizationPresenter.swift in Sources */,
 				A58BE9AD23993467008FC44B /* ProfileViewController.swift in Sources */,
 				A5C8D0A123C5F6B300F33B62 /* MainRouter.swift in Sources */,
+				A5032F5A23D883B10032BC93 /* DischargePatientCell.swift in Sources */,
 				A5C8D09F23C5F6A600F33B62 /* MainInteractor.swift in Sources */,
+				A5DFFB1223D6F35300B630B6 /* AddPatientCellModel.swift in Sources */,
 				A5B8CF7A23CDC19F0054C2B3 /* PatientCell.swift in Sources */,
 				A5B8CF8623CDC8E80054C2B3 /* Drug.swift in Sources */,
+				A5DFFB0423D6EE7D00B630B6 /* AddPatientInteractor.swift in Sources */,
 				A5B8CF6E23CDBA4C0054C2B3 /* PatientsPresenter.swift in Sources */,
 				A5B8CF4123CC68EF0054C2B3 /* ProfileView.swift in Sources */,
 				A503552C238575A700FDAE12 /* UIStoryboard.swift in Sources */,
+				A5DFFB1823D712C600B630B6 /* DocumentsRouter.swift in Sources */,
 				A5B8CF4923CC779D0054C2B3 /* NSPACellModel.swift in Sources */,
 				A503555E2386B08F00FDAE12 /* AuthorizationViewController.swift in Sources */,
 				A5B8CF6C23CCE6DF0054C2B3 /* ActionCell.swift in Sources */,
 				A58BE9B42399376A008FC44B /* DocumentsViewController.swift in Sources */,
+				A5DFFAF923D6E76000B630B6 /* SinglePatientInfoCell.swift in Sources */,
 				A50355512386A4E300FDAE12 /* EventBus.swift in Sources */,
+				A5032F3C23D84BE40032BC93 /* ScheduleOperationPresenter.swift in Sources */,
 				A58BE9B223993749008FC44B /* ActionsViewController.swift in Sources */,
 				A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */,
 				A5C8D0A923C63A0500F33B62 /* UserDefaultsInteractor.swift in Sources */,
 				A5B8CF7E23CDC1C00054C2B3 /* PatientCellModel.swift in Sources */,
 				A5B8CF6623CCACE00054C2B3 /* NSPACell.swift in Sources */,
 				A5B8CF8C23CDC9180054C2B3 /* DischargeReport.swift in Sources */,
+				A5032F6023D883D70032BC93 /* DischargePatientPresenter.swift in Sources */,
 				A5B8CF8023CDC8AF0054C2B3 /* User.swift in Sources */,
 				A5B8CF3923C88E840054C2B3 /* FirebaseFirestoreInteractor.swift in Sources */,
 				A5B8CF9E23CE40D70054C2B3 /* SinglePatientPresenter.swift in Sources */,
+				A5DFFB0823D6EE8E00B630B6 /* AddPatientView.swift in Sources */,
+				A5032F3223D84BA60032BC93 /* SelectDrugPresenter.swift in Sources */,
 				A5B8CFA423CE41050054C2B3 /* SinglePatientView.swift in Sources */,
+				A5032F3623D84BBA0032BC93 /* SelectDrugRouter.swift in Sources */,
 				A5C8D09923C5EE3400F33B62 /* AuthorizationInteractor.swift in Sources */,
 				A5B8CF4723CC777B0054C2B3 /* PhotoCellModel.swift in Sources */,
 				A5B8CF7623CDBF3E0054C2B3 /* String.swift in Sources */,
+				A5032F6623D884260032BC93 /* DischargePatientView.swift in Sources */,
 				A5C8D0A523C5F9C900F33B62 /* BaseModel.swift in Sources */,
 				A503553E2386A24A00FDAE12 /* MainPresenter.swift in Sources */,
 				A5B8CFA023CE40EA0054C2B3 /* SinglePatientInteractor.swift in Sources */,
 				A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */,
+				A5032F6423D884190032BC93 /* DischargePatientRouter.swift in Sources */,
+				A5032F2823D844540032BC93 /* ActionsRouter.swift in Sources */,
 				A503553D2386A24A00FDAE12 /* MainController.swift in Sources */,
+				A5032F3023D84B9D0032BC93 /* SelectDrugViewController.swift in Sources */,
 				A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */,
+				A5032F5E23D883C90032BC93 /* DischargePatientCellModel.swift in Sources */,
+				A5032F5223D86D370032BC93 /* SelectDrugCellModel.swift in Sources */,
+				A5DFFB0E23D6F33100B630B6 /* AddPatientCell.swift in Sources */,
 				A50355482386A31500FDAE12 /* BaseView.swift in Sources */,
 				A5B8CF3D23CC68D90054C2B3 /* ProfileInteractor.swift in Sources */,
 				A5B8CF4323CC694E0054C2B3 /* BaseRouter.swift in Sources */,
+				A5032F3423D84BB10032BC93 /* SelectDrugInteractor.swift in Sources */,
+				A5032F4A23D850FB0032BC93 /* ScheduleOperationCellModel.swift in Sources */,
 				A5C8D0A323C5F6F200F33B62 /* BaseInteractor.swift in Sources */,
 				A5B8CF7023CDBA570054C2B3 /* PatientsInteractor.swift in Sources */,
 				A503552B238575A700FDAE12 /* UIViewController.swift in Sources */,
 				A50355582386A63900FDAE12 /* Date.swift in Sources */,
 				A58BE9A623992C38008FC44B /* WorkViewController.swift in Sources */,
 				A5B8CF8423CDC8D40054C2B3 /* Patient.swift in Sources */,
+				A5032F4E23D86D240032BC93 /* SelectDrugCell.swift in Sources */,
+				A5032F2423D844300032BC93 /* ActionsPresenter.swift in Sources */,
 				A503554F2386A47100FDAE12 /* Errors.swift in Sources */,
 				A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */,
 				A5B8CF7223CDBA630054C2B3 /* PatientsRouter.swift in Sources */,
@@ -1147,6 +1428,7 @@
 			baseConfigurationReference = 1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DM5DKMVJ3;
 				INFOPLIST_FILE = MobileHospital/Info.plist;
@@ -1156,6 +1438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.endonazerMobile.MobileHospital;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1166,6 +1449,7 @@
 			baseConfigurationReference = 34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DM5DKMVJ3;
 				INFOPLIST_FILE = MobileHospital/Info.plist;
@@ -1175,6 +1459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.endonazerMobile.MobileHospital;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -9,7 +9,8 @@
 import UIKit
 
 enum WorkTab: Int {
-    case patients, action, documents, account
+    //case patients, action, documents, account
+    case patients, documents, account
 }
 
 class WorkViewController: UITabBarController, UITabBarControllerDelegate {
@@ -29,11 +30,11 @@ class WorkViewController: UITabBarController, UITabBarControllerDelegate {
         switch selectedIndex {
         case 0:
             self.title = "Пациенты"
+//        case 1:
+//            self.title = "Действия"
         case 1:
-            self.title = "Действия"
-        case 2:
             self.title = "Документы"
-        case 3:
+        case 2:
             self.title = "Профиль"
         default:
             self.title = ""

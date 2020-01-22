@@ -8,14 +8,14 @@
 
 import Foundation
 
-class DischargeReport {
-    var id: String = ""
+class DischargeReport: BaseModel {
     var patient: String = ""
     var diagnosis: String = ""
     var date: String = ""
     var recommendation: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.patient = dictionary["Patient"] as? String ?? ""
         self.diagnosis = dictionary["Diagnosis"] as? String ?? ""
@@ -24,6 +24,7 @@ class DischargeReport {
     }
     
     init(id: String, patient: String, diagnosis: String, date: String, recommendation: String) {
+        super.init()
         self.id = id
         self.patient = patient
         self.diagnosis = diagnosis
@@ -31,7 +32,7 @@ class DischargeReport {
         self.recommendation = recommendation
     }
     
-    init() {
+    override init() {
         
     }
     

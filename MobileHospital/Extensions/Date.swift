@@ -24,10 +24,6 @@ extension Date {
         return convertDateToString(withFormat: "dd.MM.yyyy")
     }
     
-    func convertDateToProtekDateString() -> String {
-        return convertDateToString(withFormat: "yyyy-MM-dd")
-    }
-    
     func days(to secondDate: Date, calendar: Calendar = Calendar.current) -> Int {
         let day = calendar.dateComponents([.day], from: self, to: secondDate).day!
         return day

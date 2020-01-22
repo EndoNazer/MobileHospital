@@ -68,9 +68,9 @@ class MainPresenter<T: MainView>:BasePresenter<T> {
             SessionData.AuthPassword.saveValue(user.password)
             FirebaseFirestoreInteractor.getDoctorFromSessionDataValues { (doctor) in
                 SessionData.SelectedDoctor.saveValue(doctor)
-                UIImage().downloaded(from: doctor.image) { (img) in
+                UIImage().downloaded(from: doctor.image, complition: { (img) in
                     SessionData.DoctorAvatar.saveValue(img)
-                }
+                }){}
             }
         } else {
             removeUserData()

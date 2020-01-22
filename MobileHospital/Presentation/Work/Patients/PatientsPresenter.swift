@@ -17,7 +17,10 @@ class PatientsPresenter<T: PatientsView>: BasePresenter<T> {
     var patients: [Patient] = []
     
     func viewDidLoad() {
-        refresh()
+        loadData(complition: { [weak self] in
+            guard let `self` = self else { return }
+            self.configureCellModels()
+        })
     }
     
     func configureCellModels() {
@@ -30,9 +33,10 @@ class PatientsPresenter<T: PatientsView>: BasePresenter<T> {
             let patientCellModel = PatientCellModel(number: "\(index)", name: patient.name, surname: patient.surname, patronymic: patient.patronymic)
             self.cellModels.append(patientCellModel)
         }
+        self.viewState.reloadTable()
     }
     
-    func refresh() {
+    func loadData(complition: @escaping (() -> Void)) {
         interactor.getPatients { [weak self] (recieved) in
             guard let `self` = self else { return }
             self.patients = recieved.sorted(by: { (first, second) -> Bool in
@@ -40,13 +44,27 @@ class PatientsPresenter<T: PatientsView>: BasePresenter<T> {
                 guard let idSecond = Int(second.id) else { return false }
                 return idFirst < idSecond
             })
+            complition()
+        }
+    }
+    
+    func refresh() {
+        loadData(complition: {[weak self] in
+            guard let `self` = self else { return }
             self.configureCellModels()
             self.viewState.reloadTable()
-        }
+        })
     }
     
     func getCountCellModels() -> Int {
         return cellModels.count
     }
     
+    func toAddPatient() {
+        self.router.toAddPatient()
+    }
+    
+    func toSinglePatient(index: Int){
+        self.router.toSinglePatient(patient: self.patients[index])
+    }
 }

@@ -9,5 +9,10 @@
 import Foundation
 
 class BaseModel {
+    var id: String = ""
+    
+    init() {
+        
+    }
     
 }

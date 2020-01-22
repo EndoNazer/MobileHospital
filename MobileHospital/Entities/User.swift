@@ -8,24 +8,25 @@
 
 import Foundation
 
-class User {
-    var id: String = ""
+class User: BaseModel {
     var email: String = ""
     var password: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.email = dictionary["Email"] as? String ?? ""
         self.password = dictionary["Password"] as? String ?? ""
     }
     
     init(id: String, email: String, password: String) {
+        super.init()
         self.id = id
         self.email = email
         self.password = password
     }
     
-    init() {
+    override init() {
         
     }
     

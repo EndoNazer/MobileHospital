@@ -17,13 +17,13 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.viewDidLoad()
         configureTableView()
         configureRespond()
         registerCells()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.presenter.viewDidLoad()
         self.presenter.refresh()
     }
     
@@ -80,6 +80,14 @@ extension ProfileViewController: ProfileView {
         DispatchQueue.main.async {
             self.profileTableView.reloadData()
         }
+    }
+    
+    func showLoader() {
+        Events.ShowLoader.post()
+    }
+    
+    func hideLoader() {
+        Events.HideLoader.post()
     }
     
 }

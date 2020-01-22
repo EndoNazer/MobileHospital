@@ -10,4 +10,6 @@ import Foundation
 
 protocol ProfileView: BaseView {
     func reloadTable()
+    func showLoader()
+    func hideLoader()
 }

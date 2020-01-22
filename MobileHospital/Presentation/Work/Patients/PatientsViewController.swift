@@ -17,6 +17,7 @@ class PatientsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.viewDidLoad()
         configureTableView()
         configureRespond()
         registerCells()
@@ -24,7 +25,11 @@ class PatientsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.presenter.viewDidLoad()
-        self.presenter.refresh()
+        configureBarButton()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.rightBarButtonItem = nil
     }
     
     private func configureTableView() {
@@ -54,6 +59,15 @@ class PatientsViewController: UIViewController {
         PatientCell.registerNib(forTableView: patientsTableView)
     }
     
+    private func configureBarButton() {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addHandler))
+        self.tabBarController?.navigationItem.rightBarButtonItem = addButton
+    }
+    
+    @objc private func addHandler() {
+        presenter.toAddPatient()
+    }
+    
 }
 
 extension PatientsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -72,7 +86,7 @@ extension PatientsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.router.toSinglePatient(patient: presenter.patients[indexPath.row])
+        presenter.toSinglePatient(index: indexPath.row)
     }
     
 }

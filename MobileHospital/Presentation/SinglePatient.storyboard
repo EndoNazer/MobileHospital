@@ -37,5 +37,95 @@
             </objects>
             <point key="canvasLocation" x="52" y="76"/>
         </scene>
+        <!--Schedule Operation View Controller-->
+        <scene sceneID="wNQ-4e-hdM">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleOperationViewController" id="G9E-HX-aa1" customClass="ScheduleOperationViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xui-0f-tjI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-uP-qZU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LLJ-Ec-nyj" firstAttribute="bottom" secondItem="3Wp-uP-qZU" secondAttribute="bottom" id="lk3-5j-lTe"/>
+                            <constraint firstItem="LLJ-Ec-nyj" firstAttribute="trailing" secondItem="3Wp-uP-qZU" secondAttribute="trailing" id="t2x-5x-f9Q"/>
+                            <constraint firstItem="3Wp-uP-qZU" firstAttribute="top" secondItem="LLJ-Ec-nyj" secondAttribute="top" id="uZ4-Dm-LNf"/>
+                            <constraint firstItem="3Wp-uP-qZU" firstAttribute="leading" secondItem="LLJ-Ec-nyj" secondAttribute="leading" id="w59-BM-v4x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LLJ-Ec-nyj"/>
+                    </view>
+                    <connections>
+                        <outlet property="scheduleOperationTableView" destination="3Wp-uP-qZU" id="xiA-wZ-Ak8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y00-ap-gTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="75"/>
+        </scene>
+        <!--Select Drug View Controller-->
+        <scene sceneID="ujc-xX-iVM">
+            <objects>
+                <viewController storyboardIdentifier="SelectDrugViewController" id="0hz-Q6-VxE" customClass="SelectDrugViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SEW-oR-DcU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hza-e5-37R">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HNf-rb-fZ3" firstAttribute="trailing" secondItem="hza-e5-37R" secondAttribute="trailing" id="L0q-DO-bJs"/>
+                            <constraint firstItem="HNf-rb-fZ3" firstAttribute="bottom" secondItem="hza-e5-37R" secondAttribute="bottom" id="fWm-li-zwI"/>
+                            <constraint firstItem="hza-e5-37R" firstAttribute="top" secondItem="HNf-rb-fZ3" secondAttribute="top" id="ghj-hb-Bkq"/>
+                            <constraint firstItem="hza-e5-37R" firstAttribute="leading" secondItem="HNf-rb-fZ3" secondAttribute="leading" id="x76-jA-WJ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HNf-rb-fZ3"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectDrugTableView" destination="hza-e5-37R" id="g91-cB-Dqi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RY4-Fl-LGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="75"/>
+        </scene>
+        <!--Discharge Patient View Controller-->
+        <scene sceneID="X8d-9h-KLF">
+            <objects>
+                <viewController storyboardIdentifier="DischargePatientViewController" id="IpO-Wq-ePc" customClass="DischargePatientViewController" customModule="MobileHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="omf-w5-HMr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8EV-qh-w7M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8EV-qh-w7M" firstAttribute="top" secondItem="6Ur-er-dP6" secondAttribute="top" id="5V2-d3-hJi"/>
+                            <constraint firstItem="6Ur-er-dP6" firstAttribute="bottom" secondItem="8EV-qh-w7M" secondAttribute="bottom" id="Zbe-rr-qK0"/>
+                            <constraint firstItem="8EV-qh-w7M" firstAttribute="leading" secondItem="6Ur-er-dP6" secondAttribute="leading" id="e1z-Kr-6DW"/>
+                            <constraint firstItem="6Ur-er-dP6" firstAttribute="trailing" secondItem="8EV-qh-w7M" secondAttribute="trailing" id="pfN-Vk-lzO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ur-er-dP6"/>
+                    </view>
+                    <connections>
+                        <outlet property="dischargePatientTableView" destination="8EV-qh-w7M" id="dMQ-FX-5se"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9X-HN-vML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137" y="74"/>
+        </scene>
     </scenes>
 </document>

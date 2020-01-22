@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Doctor {
-    var id: String = ""
+class Doctor: BaseModel {
     var name: String = ""
     var surname: String = ""
     var patronymic: String = ""
@@ -20,6 +19,7 @@ class Doctor {
     var image: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.age = dictionary["Age"] as? String ?? ""
         self.experience = dictionary["Experience"] as? String ?? ""
@@ -32,6 +32,7 @@ class Doctor {
     }
     
     init(id: String, name: String, surname: String, patronymic: String, age: String, experience: String, numberOfPatients: String, specialization: String, image: String) {
+        super.init()
         self.id = id
         self.age = age
         self.experience = experience
@@ -43,7 +44,7 @@ class Doctor {
         self.surname = surname
     }
     
-    init() {
+    override init() {
         
     }
     

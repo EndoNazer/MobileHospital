@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SinglePatientInfoCell" customModule="MobileHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5f-9s-Cva">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-VO-5KG">
+                            <rect key="frame" x="20" y="10" width="374" height="112"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gIZ-VO-5KG" secondAttribute="trailing" constant="20" id="eDT-U6-dgy"/>
+                        <constraint firstItem="gIZ-VO-5KG" firstAttribute="top" secondItem="D5f-9s-Cva" secondAttribute="top" constant="10" id="eL7-lU-mQk"/>
+                        <constraint firstItem="gIZ-VO-5KG" firstAttribute="leading" secondItem="D5f-9s-Cva" secondAttribute="leading" constant="20" id="s6A-8O-vKE"/>
+                        <constraint firstAttribute="bottom" secondItem="gIZ-VO-5KG" secondAttribute="bottom" constant="10" id="w6I-bA-Gzw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D5f-9s-Cva" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1tt-0x-SB6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="D5f-9s-Cva" secondAttribute="bottom" id="DmD-ru-uh2"/>
+                <constraint firstItem="D5f-9s-Cva" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L5n-ea-vqJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="D5f-9s-Cva" secondAttribute="trailing" id="lrf-VO-96O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="gIZ-VO-5KG" id="d8J-jP-GoE"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="347.54464285714283"/>
+        </view>
+    </objects>
+</document>

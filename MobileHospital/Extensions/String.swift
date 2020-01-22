@@ -25,4 +25,20 @@ extension String {
         }
     }
     
+    func convertStringToDate(withFormat format: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        dateFormatter.locale = Locale(identifier: "ru_RU")
+        let date = dateFormatter.date(from: self) ?? Date()
+        return date
+    }
+    
+    func convertStringWithNormalFormatToDate() -> Date {
+        return convertStringToDate(withFormat: "dd.MM.yyyy")
+    }
+    
+    func convertStringWithProtekFormatToDate() -> Date {
+        return convertStringToDate(withFormat: "yyyy-MM-dd")
+    }
+    
 }

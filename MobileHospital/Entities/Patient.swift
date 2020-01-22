@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Patient {
-    var id: String = ""
+class Patient: BaseModel {
     var name: String = ""
     var surname: String = ""
     var patronymic: String = ""
@@ -23,6 +22,7 @@ class Patient {
     var image: String = ""
     
     init(dictionary: [String: Any]) {
+        super.init()
         self.id = dictionary["id"] as? String ?? ""
         self.name = dictionary["Name"] as? String ?? ""
         self.surname = dictionary["Surname"] as? String ?? ""
@@ -38,6 +38,7 @@ class Patient {
     }
     
     init(id: String, name: String, surname: String, patronymic: String, age: String, diagnosis: String, drugs: [String], operations: [String], doctor: String, dayOfAdmission: String, dayOfDischarge: String, image: String) {
+        super.init()
         self.id = id
         self.name = name
         self.surname = surname
@@ -52,7 +53,7 @@ class Patient {
         self.image = image
     }
     
-    init() {
+    override init() {
         
     }
     

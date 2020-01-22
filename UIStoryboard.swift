@@ -15,6 +15,7 @@ extension UIStoryboard {
         case Authorization
         case Work
         case SinglePatient
+        case AddPatient
         
         func getStoryBoard() -> UIStoryboard {
             return UIStoryboard(name: getStoryboardName(), bundle: nil)
