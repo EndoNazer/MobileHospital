@@ -32,6 +32,11 @@ class SinglePatientPresenter<T: SinglePatientView>: BasePresenter<T> {
         let profileNSPACellModel = NSPACellModel(name: self.patient.name, surname: self.patient.surname, patronymic: self.patient.patronymic, age: self.patient.age)
         self.cellModels.append(profileNSPACellModel)
         
+        let dateOfAdmissionCellModel = SingleInfoCellModel(name: "День поступления", value: self.patient.dayOfAdmission)
+        self.cellModels.append(dateOfAdmissionCellModel)
+        
+        let diagnosisCellModel = SingleInfoCellModel(name: "Диагноз", value: self.patient.diagnosis)
+        self.cellModels.append(diagnosisCellModel)
         
         if patient.dayOfDischarge == "" {
             let addDrugActionCellModel = ActionCellModel(text: "Назначить лекарство") { [weak self] in
