@@ -31,13 +31,22 @@ class AuthorizationViewController: UIViewController {
     }
     
     @objc private func signInViewTapHandler() {
-        presenter.auth(email: emailField.text!, password: passwordField.text!, whenError: { [weak self] in
-            guard let `self` = self else { return }
-            self.shakeAnimation(textField: self.emailField)
-            self.setTextRed(textField: self.emailField)
-            self.shakeAnimation(textField: self.passwordField)
-            self.setTextRed(textField: self.passwordField)
-        })
+        guard let text = passwordField.text else {
+            shakeAnimation(textField: passwordField)
+            return
+        }
+        if text.count >= 4 {
+            presenter.auth(email: emailField.text!, password: passwordField.text!, whenError: { [weak self] in
+                guard let `self` = self else { return }
+                self.shakeAnimation(textField: self.emailField)
+                self.setTextRed(textField: self.emailField)
+                self.shakeAnimation(textField: self.passwordField)
+                self.setTextRed(textField: self.passwordField)
+            })
+        } else {
+            shakeAnimation(textField: passwordField)
+            setTextRed(textField: self.passwordField)
+        }
     }
     
     private func configureKeyboard() {

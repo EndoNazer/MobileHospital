@@ -26,8 +26,13 @@ class AuthorizationPresenter<T: AuthorizationView>: BasePresenter<T> {
             user.email = email
             user.password = password
             UserDefaultsInteractor.setUser(user: user)
+            SessionData.AuthEmail.saveValue(email)
+            SessionData.AuthPassword.saveValue(password)
             FirebaseFirestoreInteractor.getDoctorFromSessionDataValues { (doctor) in
                 SessionData.SelectedDoctor.saveValue(doctor)
+                UIImage().downloaded(from: doctor.image, complition: { (img) in
+                    SessionData.DoctorAvatar.saveValue(img)
+                }){}
             }
             self.router.toWork()
         })

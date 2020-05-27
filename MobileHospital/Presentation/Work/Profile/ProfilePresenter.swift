@@ -49,8 +49,7 @@ class ProfilePresenter<T: ProfileView>: BasePresenter<T> {
     
     func refresh() {
         getDoctorData()
-        configureCellModels()
-        viewState.reloadTable()
+        refreshInterface()
     }
     
     func getCountCellModels() -> Int {
@@ -62,9 +61,14 @@ class ProfilePresenter<T: ProfileView>: BasePresenter<T> {
         self.interactor.getDoctorData { [weak self] (doctor) in
             guard let `self` = self else { return }
             self.doctorData = doctor
-            self.refresh()
+            self.refreshInterface()
             self.viewState.hideLoader()
         }
+    }
+    
+    private func refreshInterface() {
+        configureCellModels()
+        viewState.reloadTable()
     }
     
 }
