@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,14 +24,6 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bp7-BO-qCe">
-                            <rect key="frame" x="15" y="65" width="384" height="35"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="35" id="dYW-3j-Gwn"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL6-Zw-hgi">
                             <rect key="frame" x="0.0" y="115" width="414" height="50"/>
                             <subviews>
@@ -49,19 +41,28 @@
                                 <constraint firstItem="o9U-UB-bJz" firstAttribute="centerX" secondItem="AL6-Zw-hgi" secondAttribute="centerX" id="tEj-Qu-q5j"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите сюда, чтобы выбрать дату" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-5g-H1l">
+                            <rect key="frame" x="15" y="65" width="384" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="kyW-cx-EOV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="bp7-BO-qCe" firstAttribute="leading" secondItem="8Ot-bG-git" secondAttribute="leading" constant="15" id="Pi4-Cd-Gg6"/>
-                        <constraint firstItem="AL6-Zw-hgi" firstAttribute="top" secondItem="bp7-BO-qCe" secondAttribute="bottom" constant="15" id="YAS-Bd-h2h"/>
+                        <constraint firstItem="6Ft-5g-H1l" firstAttribute="top" secondItem="cnp-yG-qHG" secondAttribute="bottom" constant="15" id="7UQ-yh-ZwT"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ft-5g-H1l" secondAttribute="trailing" constant="15" id="Zdw-3m-gR5"/>
+                        <constraint firstItem="6Ft-5g-H1l" firstAttribute="leading" secondItem="8Ot-bG-git" secondAttribute="leading" constant="15" id="aED-Kh-VWC"/>
                         <constraint firstItem="cnp-yG-qHG" firstAttribute="leading" secondItem="8Ot-bG-git" secondAttribute="leading" constant="15" id="aqj-5k-OZT"/>
-                        <constraint firstAttribute="trailing" secondItem="bp7-BO-qCe" secondAttribute="trailing" constant="15" id="hcj-NO-RWD"/>
                         <constraint firstAttribute="bottom" secondItem="AL6-Zw-hgi" secondAttribute="bottom" id="p2c-b1-kJs"/>
                         <constraint firstItem="cnp-yG-qHG" firstAttribute="top" secondItem="8Ot-bG-git" secondAttribute="top" constant="15" id="q56-yf-gMz"/>
                         <constraint firstItem="AL6-Zw-hgi" firstAttribute="leading" secondItem="8Ot-bG-git" secondAttribute="leading" id="sE5-rL-HRR"/>
                         <constraint firstAttribute="trailing" secondItem="cnp-yG-qHG" secondAttribute="trailing" constant="15" id="svz-DF-pBT"/>
+                        <constraint firstItem="AL6-Zw-hgi" firstAttribute="top" secondItem="6Ft-5g-H1l" secondAttribute="bottom" constant="15" id="tcA-sd-sNo"/>
                         <constraint firstAttribute="trailing" secondItem="AL6-Zw-hgi" secondAttribute="trailing" id="yMj-5Z-EQO"/>
-                        <constraint firstItem="bp7-BO-qCe" firstAttribute="top" secondItem="cnp-yG-qHG" secondAttribute="bottom" constant="15" id="yTu-Sq-jWM"/>
                     </constraints>
                 </view>
             </subviews>
@@ -76,7 +77,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="actionView" destination="AL6-Zw-hgi" id="CjO-xY-RTA"/>
-                <outlet property="dateField" destination="bp7-BO-qCe" id="ZRv-kW-Wg2"/>
+                <outlet property="dateLabel" destination="6Ft-5g-H1l" id="6F5-j1-8Tj"/>
                 <outlet property="nameField" destination="cnp-yG-qHG" id="MJU-pZ-3tf"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="280.91517857142856"/>

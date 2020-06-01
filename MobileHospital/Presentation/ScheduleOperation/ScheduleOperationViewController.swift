@@ -53,6 +53,18 @@ extension ScheduleOperationViewController: UITableViewDelegate, UITableViewDataS
                 return UITableViewCell()
         }
         cell.config(cellModel: model)
+        
+        if let cell = cell as? ScheduleOperationCell {
+            cell.datePickerAction = { [weak self] in
+                guard let `self` = self else {return}
+                let vc = DatePickerViewController()
+                vc.delegate = self
+                vc.modalPresentationStyle = .overCurrentContext
+                vc.modalTransitionStyle = .crossDissolve
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+        
         return cell
     }
     
@@ -66,6 +78,16 @@ extension ScheduleOperationViewController: ScheduleOperationView {
     
     func popBack() {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+//MARK: - DatePickerDelegate
+
+extension ScheduleOperationViewController: DatePickerViewControllerDelegate {
+    func acceptButtonPressed(date: Date) {
+        presenter.date = date.convertDateToNormalDateString()
+        self.reloadTable()
     }
     
 }

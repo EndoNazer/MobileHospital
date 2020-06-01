@@ -11,9 +11,9 @@ import Foundation
 class ScheduleOperationCellModel: TableCellModel {
     
     var reuseIdentifier: String = ScheduleOperationCell.reuseIdentifier
-    var callback: ((String, String) -> Void)
+    var callback: ((String) -> Void)
     
-    init(callback: @escaping ((String, String) -> Void)) {
+    init(callback: @escaping ((String) -> Void)) {
         self.callback = callback
     }
     

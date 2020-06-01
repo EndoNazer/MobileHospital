@@ -13,6 +13,8 @@ class ScheduleOperationPresenter<T: ScheduleOperationView>: BasePresenter<T> {
     var interactor = ScheduleOperationInteractor()
     var router = ScheduleOperationRouter()
     
+    var date = ""
+    
     var cellModels: [Any] = []
     var operation: Operation = Operation()
     var patient: Patient = Patient()
@@ -24,10 +26,10 @@ class ScheduleOperationPresenter<T: ScheduleOperationView>: BasePresenter<T> {
     func configureCellModels() {
         self.cellModels = []
         
-        let scheduleOperationCellModel = ScheduleOperationCellModel { [weak self] (name, date) in
+        let scheduleOperationCellModel = ScheduleOperationCellModel { [weak self] (name) in
             guard let `self` = self else { return }
             self.interactor.getLastOperationId { (lastId) in
-                self.operation = Operation(id: "\(lastId + 1)", name: name, patient: self.patient.id, date: date)
+                self.operation = Operation(id: "\(lastId + 1)", name: name, patient: self.patient.id, date: self.date)
                 self.interactor.addOperation(operation: self.operation, patient: self.patient)
                 Events.MessageEvent.post("Операция добавлена")
                 self.viewState.popBack()
