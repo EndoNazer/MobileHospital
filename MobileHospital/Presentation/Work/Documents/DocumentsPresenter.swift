@@ -21,7 +21,7 @@ class DocumentsPresenter<T: DocumentsView>: BasePresenter<T> {
     func configureCellModels() {
         self.cellModels = []
         
-        let actionCellModel = ActionCellModel(text: "Месячный отчет") {
+        let actionCellModel = ActionCellModel(text: "Месячный отчет", color: UIColor.green) {
             self.interactor.createMonthlyReport { [weak self] (monthlyReport) in
                 guard let `self` = self else { return }
                 self.interactor.addReport(monthlyReport: monthlyReport)

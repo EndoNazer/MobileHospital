@@ -39,19 +39,19 @@ class SinglePatientPresenter<T: SinglePatientView>: BasePresenter<T> {
         self.cellModels.append(diagnosisCellModel)
         
         if patient.dayOfDischarge == "" {
-            let addDrugActionCellModel = ActionCellModel(text: "Назначить лекарство") { [weak self] in
+            let addDrugActionCellModel = ActionCellModel(text: "Назначить лекарство", color: UIColor.green) { [weak self] in
                 guard let `self` = self else { return }
                 self.router.toAddDrug(patient: self.patient)
             }
             self.cellModels.append(addDrugActionCellModel)
             
-            let addOperationActionCellModel = ActionCellModel(text: "Добавить операцию") { [weak self] in
+            let addOperationActionCellModel = ActionCellModel(text: "Добавить операцию", color: UIColor.green) { [weak self] in
                 guard let `self` = self else { return }
                 self.router.toAddOperation(patient: self.patient)
             }
             self.cellModels.append(addOperationActionCellModel)
             
-            let dischargeActionCellModel = ActionCellModel(text: "Выписать пациента") { [weak self] in
+            let dischargeActionCellModel = ActionCellModel(text: "Выписать пациента", color: UIColor.red) { [weak self] in
                 guard let `self` = self else { return }
                 self.router.toDischargePatient(patient: self.patient)
             }

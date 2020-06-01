@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TextCell" customModule="Ladoshki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9RG-A7-Ixg">
+                    <rect key="frame" x="0.0" y="0.0" width="435" height="65"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="661-Vb-Prf" customClass="CustomTextField" customModule="Ladoshki" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="15" width="404" height="21"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                        </textField>
+                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsL-IM-JrA">
+                            <rect key="frame" x="0.0" y="51" width="435" height="1"/>
+                            <color key="backgroundColor" red="0.3529411764705882" green="0.41568627450980389" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="jQK-jP-Xs8"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SOk-0p-ghD">
+                            <rect key="frame" x="0.0" y="15" width="85" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="0.44705882352941173" green="0.52549019607843139" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст ошибки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qc-rk-o36">
+                            <rect key="frame" x="0.0" y="52" width="71.5" height="13"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passwordEye" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-x3-rLa">
+                            <rect key="frame" x="414" y="15" width="21" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="r2g-SB-bbb"/>
+                                <constraint firstAttribute="width" constant="21" id="sUo-pv-IFu"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-Kj-aMa">
+                            <rect key="frame" x="23" y="15" width="26" height="21"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="0.72156862745098038" green="0.74117647058823533" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="661-Vb-Prf" firstAttribute="leading" secondItem="9RG-A7-Ixg" secondAttribute="leading" id="0n5-mg-Rz0"/>
+                        <constraint firstItem="2qc-rk-o36" firstAttribute="top" secondItem="VsL-IM-JrA" secondAttribute="bottom" id="Ics-Pf-h6K"/>
+                        <constraint firstItem="Dff-Kj-aMa" firstAttribute="top" secondItem="9RG-A7-Ixg" secondAttribute="top" constant="15" id="JP5-C6-z6D"/>
+                        <constraint firstAttribute="trailing" secondItem="VsL-IM-JrA" secondAttribute="trailing" id="JjX-L1-Y9S"/>
+                        <constraint firstItem="SOk-0p-ghD" firstAttribute="top" secondItem="9RG-A7-Ixg" secondAttribute="top" constant="15" id="OHM-4T-tsx"/>
+                        <constraint firstAttribute="trailing" secondItem="fKD-x3-rLa" secondAttribute="trailing" id="Qnt-0e-1FC"/>
+                        <constraint firstItem="2qc-rk-o36" firstAttribute="leading" secondItem="9RG-A7-Ixg" secondAttribute="leading" id="Vop-ei-Krz"/>
+                        <constraint firstItem="Dff-Kj-aMa" firstAttribute="leading" secondItem="9RG-A7-Ixg" secondAttribute="leading" constant="23" id="eSq-2o-GBw"/>
+                        <constraint firstItem="661-Vb-Prf" firstAttribute="top" secondItem="9RG-A7-Ixg" secondAttribute="top" constant="15" id="ge0-9W-ih3"/>
+                        <constraint firstItem="VsL-IM-JrA" firstAttribute="top" secondItem="Dff-Kj-aMa" secondAttribute="bottom" constant="15" id="h7F-05-Nsg"/>
+                        <constraint firstItem="VsL-IM-JrA" firstAttribute="top" secondItem="fKD-x3-rLa" secondAttribute="bottom" constant="15" id="iX8-qY-heW"/>
+                        <constraint firstItem="fKD-x3-rLa" firstAttribute="top" secondItem="9RG-A7-Ixg" secondAttribute="top" constant="15" id="jwM-zs-Aba"/>
+                        <constraint firstItem="VsL-IM-JrA" firstAttribute="leading" secondItem="9RG-A7-Ixg" secondAttribute="leading" id="o2c-6a-zie"/>
+                        <constraint firstItem="SOk-0p-ghD" firstAttribute="leading" secondItem="9RG-A7-Ixg" secondAttribute="leading" id="rge-8p-Z9s"/>
+                        <constraint firstItem="VsL-IM-JrA" firstAttribute="top" secondItem="661-Vb-Prf" secondAttribute="bottom" constant="15" id="u9N-MG-Irg"/>
+                        <constraint firstItem="fKD-x3-rLa" firstAttribute="leading" secondItem="661-Vb-Prf" secondAttribute="trailing" constant="10" id="vew-wf-7bW"/>
+                        <constraint firstAttribute="height" constant="65" id="zXb-L3-Yzq"/>
+                        <constraint firstAttribute="bottom" secondItem="2qc-rk-o36" secondAttribute="bottom" id="zpD-SL-g42"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9RG-A7-Ixg" secondAttribute="trailing" id="DFs-j4-6i9"/>
+                <constraint firstItem="9RG-A7-Ixg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GeH-Vn-4dG"/>
+                <constraint firstItem="9RG-A7-Ixg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wug-Qh-1Pu"/>
+                <constraint firstAttribute="bottom" secondItem="9RG-A7-Ixg" secondAttribute="bottom" id="zTN-vq-z54"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="additionalLabel" destination="Dff-Kj-aMa" id="hWO-oY-DEm"/>
+                <outlet property="additionalLabelLeadingConstraint" destination="eSq-2o-GBw" id="XtF-yo-QYD"/>
+                <outlet property="errorLabel" destination="2qc-rk-o36" id="hpH-gI-Ur7"/>
+                <outlet property="passwordEyeImageView" destination="fKD-x3-rLa" id="tha-I4-bFK"/>
+                <outlet property="placeholderLabel" destination="SOk-0p-ghD" id="dQx-lp-A1e"/>
+                <outlet property="placeholderTopConstraint" destination="OHM-4T-tsx" id="e3S-w2-HGG"/>
+                <outlet property="textField" destination="661-Vb-Prf" id="2fm-K3-ON3"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="418.19196428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="passwordEye" width="24" height="24"/>
+    </resources>
+</document>

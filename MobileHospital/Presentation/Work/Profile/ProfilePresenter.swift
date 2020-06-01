@@ -41,7 +41,7 @@ class ProfilePresenter<T: ProfileView>: BasePresenter<T> {
         let numberOfPatientsCellModel = SingleInfoCellModel(name: "Количество пациентов", value: doctorData.numberOfPatients)
         cellModels.append(numberOfPatientsCellModel)
         
-        let actionCellModel = ActionCellModel(text: "Выйти из аккаунта") {
+        let actionCellModel = ActionCellModel(text: "Выйти из аккаунта", color: UIColor.red) {
             Events.UnauthEvent.post()
         }
         cellModels.append(actionCellModel)

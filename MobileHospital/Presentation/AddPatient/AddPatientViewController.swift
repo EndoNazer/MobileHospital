@@ -36,7 +36,8 @@ class AddPatientViewController: UIViewController {
     }
     
     private func registerCells() {
-        AddPatientCell.registerNib(forTableView: addPatientTableView)
+        TextCell.registerNib(forTableView: addPatientTableView)
+        ActionCell.registerNib(forTableView: addPatientTableView)
     }
     
 }
@@ -44,11 +45,11 @@ class AddPatientViewController: UIViewController {
 extension AddPatientViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.getCountCellModels()
+        return presenter.configureCellModels().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let model = presenter.cellModels[indexPath.row] as? TableCellModel,
+        guard let model = presenter.configureCellModels()[indexPath.row] as? TableCellModel,
             let cell = tableView.dequeueReusableCell(withIdentifier: model.reuseIdentifier, for: indexPath) as? TableCell else {
                 return UITableViewCell()
         }

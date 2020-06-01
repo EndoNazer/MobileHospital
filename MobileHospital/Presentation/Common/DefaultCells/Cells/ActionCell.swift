@@ -35,8 +35,9 @@ class ActionCell: UITableViewCell {
         action()
     }
     
-    private func configureWith(text: String, action: @escaping (() -> Void)) {
-        self.displayedTextLabel.text = text
+    private func configureWith(text: String, color: UIColor, action: @escaping (() -> Void)) {
+        displayedTextLabel.text = text
+        content.backgroundColor = color
         self.action = action
     }
     
@@ -49,7 +50,7 @@ extension ActionCell: TableCellConfigurable {
     func config(cellModel: TableCellModel) {
         guard let cellModel = cellModel as? ActionCellModel else { return }
         self.cellModel = cellModel
-        configureWith(text: cellModel.text, action: cellModel.action)
+        configureWith(text: cellModel.text, color: cellModel.color, action: cellModel.action)
     }
     
 }

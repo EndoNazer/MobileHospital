@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0981B74D0D3DF8FB16C1924B /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */; };
-		0990E3975E708998751A9786 /* Pods_MobileHospitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */; };
+		2019FADAFC6E8B6754FF3279 /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0844D8CCC664A183343CA9A3 /* Pods_MobileHospital_MobileHospitalUITests.framework */; };
+		5CA5BA86360E55E0DCD63F73 /* Pods_MobileHospitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B78D965D2270B3305A4A2AE /* Pods_MobileHospitalTests.framework */; };
+		5D1E3CF54BCACAD1658AB1BA /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6FDE36B4AD0DCBD5DDD9AD /* Pods_MobileHospital.framework */; };
 		A5032EFE23D785AA0032BC93 /* FirebaseStorageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032EFD23D785AA0032BC93 /* FirebaseStorageInteractor.swift */; };
 		A5032F2223D83A350032BC93 /* FileManagerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2123D83A350032BC93 /* FileManagerInteractor.swift */; };
 		A5032F2423D844300032BC93 /* ActionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5032F2323D844300032BC93 /* ActionsPresenter.swift */; };
@@ -59,6 +60,12 @@
 		A50355602386B10A00FDAE12 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A503555F2386B10A00FDAE12 /* Authorization.storyboard */; };
 		A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355612386B7DE00FDAE12 /* ImageTextField.swift */; };
 		A50355642386B88600FDAE12 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355632386B88600FDAE12 /* UIView.swift */; };
+		A5397FEF248440FF00F4EC14 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FED248440FF00F4EC14 /* TextCell.swift */; };
+		A5397FF0248440FF00F4EC14 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397FEE248440FF00F4EC14 /* TextCell.xib */; };
+		A5397FF22484410600F4EC14 /* TextCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FF12484410600F4EC14 /* TextCellModel.swift */; };
+		A5397FF4248441A900F4EC14 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FF3248441A900F4EC14 /* CustomTextField.swift */; };
+		A5397FF62484422700F4EC14 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FF52484422700F4EC14 /* Validation.swift */; };
+		A5397FF82484558300F4EC14 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FF72484558300F4EC14 /* ErrorType.swift */; };
 		A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79C2383DF4A003BCF7E /* AppDelegate.swift */; };
 		A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */; };
 		A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580B7A22383DF4A003BCF7E /* Main.storyboard */; };
@@ -144,7 +151,6 @@
 		A5DFFB1A23D712CE00B630B6 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFB1923D712CE00B630B6 /* DocumentsView.swift */; };
 		A5E7CD5823DAC23B0006BFB7 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E7CD5623DAC23B0006BFB7 /* UIStoryboard.swift */; };
 		A5E7CD5923DAC23B0006BFB7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E7CD5723DAC23B0006BFB7 /* UIViewController.swift */; };
-		B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,12 +171,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.debug.xcconfig"; sourceTree = "<group>"; };
-		1AFD079DE5A8A4A2D4F81D88 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.release.xcconfig"; sourceTree = "<group>"; };
-		8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		0844D8CCC664A183343CA9A3 /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24364D3692FAD1B398AD8D12 /* Pods-MobileHospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E8BA0A32A58B92EC505E981 /* Pods-MobileHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.debug.xcconfig"; sourceTree = "<group>"; };
+		36B9A4D7B2C962661DC6E8D2 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B78D965D2270B3305A4A2AE /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8D1E330F9625288EBE158D /* Pods-MobileHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital.release.xcconfig"; path = "Target Support Files/Pods-MobileHospital/Pods-MobileHospital.release.xcconfig"; sourceTree = "<group>"; };
 		A5032EFD23D785AA0032BC93 /* FirebaseStorageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageInteractor.swift; sourceTree = "<group>"; };
 		A5032F2123D83A350032BC93 /* FileManagerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerInteractor.swift; sourceTree = "<group>"; };
 		A5032F2323D844300032BC93 /* ActionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsPresenter.swift; sourceTree = "<group>"; };
@@ -221,6 +227,12 @@
 		A503555F2386B10A00FDAE12 /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 		A50355612386B7DE00FDAE12 /* ImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextField.swift; sourceTree = "<group>"; };
 		A50355632386B88600FDAE12 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A5397FED248440FF00F4EC14 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		A5397FEE248440FF00F4EC14 /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		A5397FF12484410600F4EC14 /* TextCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCellModel.swift; sourceTree = "<group>"; };
+		A5397FF3248441A900F4EC14 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A5397FF52484422700F4EC14 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		A5397FF72484558300F4EC14 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		A580B7992383DF4A003BCF7E /* MobileHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580B79C2383DF4A003BCF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -312,9 +324,9 @@
 		A5DFFB1923D712CE00B630B6 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		A5E7CD5623DAC23B0006BFB7 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		A5E7CD5723DAC23B0006BFB7 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital_MobileHospitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2519D70101194FB59FAF58 /* Pods-MobileHospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospitalTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospitalTests/Pods-MobileHospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1A86E5FD3DC4F8408F33560 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB6FDE36B4AD0DCBD5DDD9AD /* Pods_MobileHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,7 +334,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B371FC37BC467D691A4A43ED /* Pods_MobileHospital.framework in Frameworks */,
+				5D1E3CF54BCACAD1658AB1BA /* Pods_MobileHospital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +342,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0990E3975E708998751A9786 /* Pods_MobileHospitalTests.framework in Frameworks */,
+				5CA5BA86360E55E0DCD63F73 /* Pods_MobileHospitalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0981B74D0D3DF8FB16C1924B /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */,
+				2019FADAFC6E8B6754FF3279 /* Pods_MobileHospital_MobileHospitalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,24 +360,14 @@
 		2CCF14C98FBC27CFF65EFD3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */,
-				34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */,
-				8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */,
-				1AFD079DE5A8A4A2D4F81D88 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */,
-				AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */,
-				8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */,
+				2E8BA0A32A58B92EC505E981 /* Pods-MobileHospital.debug.xcconfig */,
+				8A8D1E330F9625288EBE158D /* Pods-MobileHospital.release.xcconfig */,
+				B1A86E5FD3DC4F8408F33560 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */,
+				36B9A4D7B2C962661DC6E8D2 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */,
+				AB2519D70101194FB59FAF58 /* Pods-MobileHospitalTests.debug.xcconfig */,
+				24364D3692FAD1B398AD8D12 /* Pods-MobileHospitalTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		568BCC05BBC3855C3982A6C6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				10DFAF94E9F4F31BCE6CE8CA /* Pods_MobileHospital.framework */,
-				B60485735C7E6DBA38635D5E /* Pods_MobileHospital_MobileHospitalUITests.framework */,
-				C9A07B5F1C08BF4ABC4B5277 /* Pods_MobileHospitalTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A5032F2B23D84A870032BC93 /* SelectDrug */ = {
@@ -642,7 +644,7 @@
 				A580B7BD2383DF4F003BCF7E /* MobileHospitalUITests */,
 				A580B79A2383DF4A003BCF7E /* Products */,
 				2CCF14C98FBC27CFF65EFD3E /* Pods */,
-				568BCC05BBC3855C3982A6C6 /* Frameworks */,
+				D1578D7CFB1C75688C116EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -665,6 +667,9 @@
 				A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */,
 				A580B7A52383DF4F003BCF7E /* Assets.xcassets */,
 				A580B7AA2383DF4F003BCF7E /* Info.plist */,
+				A5397FF3248441A900F4EC14 /* CustomTextField.swift */,
+				A5397FF52484422700F4EC14 /* Validation.swift */,
+				A5397FF72484558300F4EC14 /* ErrorType.swift */,
 				A5035522238573CC00FDAE12 /* Main */,
 				A503551F2385736E00FDAE12 /* Entities */,
 				A50355202385739200FDAE12 /* Database */,
@@ -776,6 +781,8 @@
 		A5B8CF5323CC78640054C2B3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A5397FED248440FF00F4EC14 /* TextCell.swift */,
+				A5397FEE248440FF00F4EC14 /* TextCell.xib */,
 				A5B8CF5F23CC9EAF0054C2B3 /* PhotoCell.swift */,
 				A5B8CF6123CC9F350054C2B3 /* PhotoCell.xib */,
 				A5B8CF6523CCACE00054C2B3 /* NSPACell.swift */,
@@ -791,6 +798,7 @@
 		A5B8CF5423CC786A0054C2B3 /* CellModels */ = {
 			isa = PBXGroup;
 			children = (
+				A5397FF12484410600F4EC14 /* TextCellModel.swift */,
 				A5B8CF4623CC777B0054C2B3 /* PhotoCellModel.swift */,
 				A5B8CF4823CC779D0054C2B3 /* NSPACellModel.swift */,
 				A5B8CF5523CC78890054C2B3 /* SingleInfoCellModel.swift */,
@@ -886,6 +894,16 @@
 			path = CellModels;
 			sourceTree = "<group>";
 		};
+		D1578D7CFB1C75688C116EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB6FDE36B4AD0DCBD5DDD9AD /* Pods_MobileHospital.framework */,
+				0844D8CCC664A183343CA9A3 /* Pods_MobileHospital_MobileHospitalUITests.framework */,
+				4B78D965D2270B3305A4A2AE /* Pods_MobileHospitalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -893,11 +911,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A580B7C32383DF4F003BCF7E /* Build configuration list for PBXNativeTarget "MobileHospital" */;
 			buildPhases = (
-				9EDAAA99D6141AEB3EBD591E /* [CP] Check Pods Manifest.lock */,
+				8F02B78DCFD72206540B1F12 /* [CP] Check Pods Manifest.lock */,
 				A580B7952383DF4A003BCF7E /* Sources */,
 				A580B7962383DF4A003BCF7E /* Frameworks */,
 				A580B7972383DF4A003BCF7E /* Resources */,
-				9221851A9507DB44509F69CE /* [CP] Embed Pods Frameworks */,
+				1B2B75837B9525E9E29EB687 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -912,7 +930,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A580B7C62383DF4F003BCF7E /* Build configuration list for PBXNativeTarget "MobileHospitalTests" */;
 			buildPhases = (
-				47A5C5865FA403B54F2819CD /* [CP] Check Pods Manifest.lock */,
+				8CAF8CE2FE98FB860936794A /* [CP] Check Pods Manifest.lock */,
 				A580B7AB2383DF4F003BCF7E /* Sources */,
 				A580B7AC2383DF4F003BCF7E /* Frameworks */,
 				A580B7AD2383DF4F003BCF7E /* Resources */,
@@ -931,11 +949,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A580B7C92383DF4F003BCF7E /* Build configuration list for PBXNativeTarget "MobileHospitalUITests" */;
 			buildPhases = (
-				1AFD1019072F8B5B49CB8E40 /* [CP] Check Pods Manifest.lock */,
+				631E9074539965486ABD0413 /* [CP] Check Pods Manifest.lock */,
 				A580B7B62383DF4F003BCF7E /* Sources */,
 				A580B7B72383DF4F003BCF7E /* Frameworks */,
 				A580B7B82383DF4F003BCF7E /* Resources */,
-				1F2CED01BDA779983F2EF12E /* [CP] Embed Pods Frameworks */,
+				67B981BBCB69C6C042DC0AA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1013,6 +1031,7 @@
 				A5B8CF5A23CC78AB0054C2B3 /* SingleInfoCell.xib in Resources */,
 				A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */,
 				A58BE9A523992C38008FC44B /* Work.storyboard in Resources */,
+				A5397FF0248440FF00F4EC14 /* TextCell.xib in Resources */,
 				A58BE9B9239A64E7008FC44B /* Cloud-Light.otf in Resources */,
 				A5DFFB1023D6F33800B630B6 /* AddPatientCell.xib in Resources */,
 			);
@@ -1035,7 +1054,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AFD1019072F8B5B49CB8E40 /* [CP] Check Pods Manifest.lock */ = {
+		1B2B75837B9525E9E29EB687 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631E9074539965486ABD0413 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1057,7 +1093,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1F2CED01BDA779983F2EF12E /* [CP] Embed Pods Frameworks */ = {
+		67B981BBCB69C6C042DC0AA0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1074,7 +1110,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileHospital-MobileHospitalUITests/Pods-MobileHospital-MobileHospitalUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47A5C5865FA403B54F2819CD /* [CP] Check Pods Manifest.lock */ = {
+		8CAF8CE2FE98FB860936794A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1096,24 +1132,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9221851A9507DB44509F69CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileHospital/Pods-MobileHospital-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EDAAA99D6141AEB3EBD591E /* [CP] Check Pods Manifest.lock */ = {
+		8F02B78DCFD72206540B1F12 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1146,11 +1165,13 @@
 				A50355642386B88600FDAE12 /* UIView.swift in Sources */,
 				A5DFFB1623D712BC00B630B6 /* DocumentsInteractor.swift in Sources */,
 				A58BE9AB23993443008FC44B /* PatientsViewController.swift in Sources */,
+				A5397FF62484422700F4EC14 /* Validation.swift in Sources */,
 				A503555B2386A6D900FDAE12 /* PreloaderView.swift in Sources */,
 				A503554B2386A40C00FDAE12 /* UseCase.swift in Sources */,
 				A5B8CFA223CE40FA0054C2B3 /* SinglePatientRouter.swift in Sources */,
 				A5032F2623D844450032BC93 /* ActionsInteractor.swift in Sources */,
 				A5B8CF8A23CDC9050054C2B3 /* MonthlyReport.swift in Sources */,
+				A5397FF22484410600F4EC14 /* TextCellModel.swift in Sources */,
 				A50355472386A31500FDAE12 /* BasePresenter.swift in Sources */,
 				A5C8D09B23C5F06400F33B62 /* AuthorizationRouter.swift in Sources */,
 				A5032F3823D84BC20032BC93 /* SelectDrugView.swift in Sources */,
@@ -1200,6 +1221,7 @@
 				A5DFFB0423D6EE7D00B630B6 /* AddPatientInteractor.swift in Sources */,
 				A5B8CF6E23CDBA4C0054C2B3 /* PatientsPresenter.swift in Sources */,
 				A5B8CF4123CC68EF0054C2B3 /* ProfileView.swift in Sources */,
+				A5397FEF248440FF00F4EC14 /* TextCell.swift in Sources */,
 				A5DFFB1823D712C600B630B6 /* DocumentsRouter.swift in Sources */,
 				A5B8CF4923CC779D0054C2B3 /* NSPACellModel.swift in Sources */,
 				A503555E2386B08F00FDAE12 /* AuthorizationViewController.swift in Sources */,
@@ -1232,10 +1254,12 @@
 				A5B8CFA023CE40EA0054C2B3 /* SinglePatientInteractor.swift in Sources */,
 				A50355622386B7DE00FDAE12 /* ImageTextField.swift in Sources */,
 				A5032F6423D884190032BC93 /* DischargePatientRouter.swift in Sources */,
+				A5397FF4248441A900F4EC14 /* CustomTextField.swift in Sources */,
 				A5032F2823D844540032BC93 /* ActionsRouter.swift in Sources */,
 				A503553D2386A24A00FDAE12 /* MainController.swift in Sources */,
 				A5032F3023D84B9D0032BC93 /* SelectDrugViewController.swift in Sources */,
 				A503552F23869C1E00FDAE12 /* GlobalRouter.swift in Sources */,
+				A5397FF82484558300F4EC14 /* ErrorType.swift in Sources */,
 				A5032F5E23D883C90032BC93 /* DischargePatientCellModel.swift in Sources */,
 				A5032F5223D86D370032BC93 /* SelectDrugCellModel.swift in Sources */,
 				A5DFFB0E23D6F33100B630B6 /* AddPatientCell.swift in Sources */,
@@ -1425,7 +1449,7 @@
 		};
 		A580B7C42383DF4F003BCF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1334AE9DF9573E57644D2FB4 /* Pods-MobileHospital.debug.xcconfig */;
+			baseConfigurationReference = 2E8BA0A32A58B92EC505E981 /* Pods-MobileHospital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1446,7 +1470,7 @@
 		};
 		A580B7C52383DF4F003BCF7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34EFBCB050EEF4CB2CD945C3 /* Pods-MobileHospital.release.xcconfig */;
+			baseConfigurationReference = 8A8D1E330F9625288EBE158D /* Pods-MobileHospital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1467,7 +1491,7 @@
 		};
 		A580B7C72383DF4F003BCF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAD68D55204573F09C762B53 /* Pods-MobileHospitalTests.debug.xcconfig */;
+			baseConfigurationReference = AB2519D70101194FB59FAF58 /* Pods-MobileHospitalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1490,7 +1514,7 @@
 		};
 		A580B7C82383DF4F003BCF7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8688BF0A504AD8747203F071 /* Pods-MobileHospitalTests.release.xcconfig */;
+			baseConfigurationReference = 24364D3692FAD1B398AD8D12 /* Pods-MobileHospitalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1513,7 +1537,7 @@
 		};
 		A580B7CA2383DF4F003BCF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8595D5317E6ADEBA9B3F1D98 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */;
+			baseConfigurationReference = B1A86E5FD3DC4F8408F33560 /* Pods-MobileHospital-MobileHospitalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1534,7 +1558,7 @@
 		};
 		A580B7CB2383DF4F003BCF7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AFD079DE5A8A4A2D4F81D88 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */;
+			baseConfigurationReference = 36B9A4D7B2C962661DC6E8D2 /* Pods-MobileHospital-MobileHospitalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
