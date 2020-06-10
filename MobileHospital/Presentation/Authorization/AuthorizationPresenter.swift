@@ -14,10 +14,6 @@ class AuthorizationPresenter<T: AuthorizationView>: BasePresenter<T> {
     var interactor: AuthorizationInteractor = AuthorizationInteractor()
     var router: AuthorizationRouter = AuthorizationRouter()
     
-    func viewDidLoad() {
-        
-    }
-    
     func auth(email: String, password: String, whenError: @escaping (() -> Void)) {
         viewState.hideKeyboard()
         interactor.auth(email: email, password: password, whenError: whenError, complition: { [weak self] in

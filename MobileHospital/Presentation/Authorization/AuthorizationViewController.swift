@@ -19,7 +19,6 @@ class AuthorizationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad()
         configureSignRecognizer()
         configureKeyboard()
         configureTextFieldsEditingRecognizers()
@@ -71,11 +70,6 @@ class AuthorizationViewController: UIViewController {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= keyboardSize.height
-//                if emailField.isEditing {
-//                    shiftView(mainView: self.view, view: self.view, textField: self.emailField, keyboardSize: keyboardSize)
-//                }else if passwordField.isEditing {
-//                    shiftView(mainView: self.view, view: self.view, textField: self.passwordField, keyboardSize: keyboardSize)
-//                }
             }
         }
     }
@@ -104,18 +98,6 @@ class AuthorizationViewController: UIViewController {
         emailField.textColor = .black
         passwordField.textColor = .black
     }
-    
-//    private func shiftView(mainView: UIView, view: UIView, textField: UITextField, keyboardSize: CGRect){
-//        guard let distanceToSuperviewSuperview = textField.superview?.superview?.frame.origin.y else { return }
-//        guard let distanceToSuperview = textField.superview?.frame.origin.y else { return }
-//        let distanceToTextField = textField.frame.origin.y + distanceToSuperview + distanceToSuperviewSuperview
-//
-//        let distanceBelowTextFieldStart = view.frame.height - (distanceToTextField + textField.frame.height + 5)
-//        let shiftDistance = keyboardSize.height - distanceBelowTextFieldStart
-//        if shiftDistance > 0{
-//            self.view.frame.origin.y -= shiftDistance
-//        }
-//    }
     
 }
 

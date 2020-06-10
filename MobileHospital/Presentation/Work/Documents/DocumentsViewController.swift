@@ -62,12 +62,4 @@ extension DocumentsViewController: DocumentsView {
         }
     }
     
-    func popBack() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    func presentAlertNotLogged() {
-        self.present(UIAlertController.init(title: "Oops!", message: "Not logged into iCloud", preferredStyle: .alert), animated: true, completion: nil)
-    }
-    
 }

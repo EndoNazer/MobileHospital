@@ -41,6 +41,8 @@ class DocumentsPresenter<T: DocumentsView>: BasePresenter<T> {
         let fileURL = self.interactor.saveToDirectory(data: monthlyReport.toDictionary(), fileName: fileName)
         if let url = fileURL {
             self.interactor.saveFileToStorage(url: url, fileName: fileName)
+        } else {
+            Events.MessageEvent.post("Не удалось сохранить отчет")
         }
     }
     

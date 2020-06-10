@@ -11,11 +11,6 @@ import Firebase
 
 class AuthorizationInteractor: BaseInteractor {//<T: AuthDataResult>: BaseInteractor<T> {
     
-    override func execute() -> Response<Void> {
-        
-        return Response()
-    }
-    
     func auth(email: String, password: String, whenError: @escaping (() -> Void), complition: @escaping (() -> Void)) {
         jobs += self.background({(ui, execute) in
             Events.ShowLoader.post()

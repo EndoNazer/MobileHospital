@@ -21,11 +21,13 @@ class FirebaseStorageInteractor {
             }
         }
         uploadTask.observe(.success) { snapshot in
-            print("AWESOME")
+            Events.MessageEvent.post("Файл успешно добавлен в хранилище")
+            print("File successfully loaded")
         }
 
         uploadTask.observe(.failure) { snapshot in
             if let error = snapshot.error as NSError? {
+                Events.MessageEvent.post("Ошибка добавления файла в хранилище")
                 switch (StorageErrorCode(rawValue: error.code)!) {
                 case .objectNotFound:
                     print("object not found")

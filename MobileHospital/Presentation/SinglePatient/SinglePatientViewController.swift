@@ -87,8 +87,4 @@ extension SinglePatientViewController: SinglePatientView {
         }
     }
     
-    func popBack() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
 }

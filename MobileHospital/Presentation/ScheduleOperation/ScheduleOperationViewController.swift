@@ -16,14 +16,9 @@ class ScheduleOperationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter.viewDidLoad()
         configureTableView()
         configureRespond()
         registerCells()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.presenter.viewDidLoad()
     }
     
     private func configureTableView() {
@@ -36,7 +31,9 @@ class ScheduleOperationViewController: UIViewController {
     }
     
     private func registerCells() {
-        ScheduleOperationCell.registerNib(forTableView: scheduleOperationTableView)
+        ScheduleOperationDateSelectorCell.registerNib(forTableView: scheduleOperationTableView)
+        TextCell.registerNib(forTableView: scheduleOperationTableView)
+        ActionCell.registerNib(forTableView: scheduleOperationTableView)
     }
     
 }
@@ -44,17 +41,17 @@ class ScheduleOperationViewController: UIViewController {
 extension ScheduleOperationViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.getCountCellModels()
+        return presenter.configureCellModels().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let model = presenter.cellModels[indexPath.row] as? TableCellModel,
+        guard let model = presenter.configureCellModels()[indexPath.row] as? TableCellModel,
             let cell = tableView.dequeueReusableCell(withIdentifier: model.reuseIdentifier, for: indexPath) as? TableCell else {
                 return UITableViewCell()
         }
         cell.config(cellModel: model)
         
-        if let cell = cell as? ScheduleOperationCell {
+        if let cell = cell as? ScheduleOperationDateSelectorCell {
             cell.datePickerAction = { [weak self] in
                 guard let `self` = self else {return}
                 let vc = DatePickerViewController()
@@ -64,7 +61,6 @@ extension ScheduleOperationViewController: UITableViewDelegate, UITableViewDataS
                 self.present(vc, animated: true, completion: nil)
             }
         }
-        
         return cell
     }
     

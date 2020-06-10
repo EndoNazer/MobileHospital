@@ -19,6 +19,7 @@ enum ErrorType: String {
     case patronymic
     case diagnosis
     case account
+    case nameOperation
     case fio
     case phone
     case city

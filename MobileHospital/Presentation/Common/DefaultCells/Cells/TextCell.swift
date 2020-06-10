@@ -199,12 +199,12 @@ extension TextCell: UITextFieldDelegate {
         case .phoneNumber:
             return checkCharacterCountAndInvalidSymbols(range: range, length: 11, text: text, string: string, charSet: .decimalDigits)
         case .text:
-            let allowedCharacters = CharacterSet(charactersIn: "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ")
+            let allowedCharacters = CharacterSet(charactersIn: "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ ")
             return checkCharacterCountAndInvalidSymbols(range: range, length: 50, text: text, string: string, charSet: allowedCharacters)
         case .accountNumber:
             return checkCharacterCountAndInvalidSymbols(range: range, length: 10, text: text, string: string, charSet: .decimalDigits)
         case .age:
-            return checkCharacterCountAndInvalidSymbols(range: range, length: 2, text: text, string: string, charSet: .decimalDigits)
+            return checkCharacterCountAndInvalidSymbols(range: range, length: 3, text: text, string: string, charSet: .decimalDigits)
         case .code:
             let allowedCharacters = CharacterSet(charactersIn: "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ1234567890")
             return checkCharacterCountAndInvalidSymbols(range: range, length: 50, text: text, string: string, charSet: allowedCharacters)

@@ -10,5 +10,4 @@ import Foundation
 
 protocol DocumentsView: BaseView {
     func reloadTable()
-    func presentAlertNotLogged()
 }

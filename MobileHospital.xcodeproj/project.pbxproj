@@ -68,6 +68,9 @@
 		A5397FF82484558300F4EC14 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FF72484558300F4EC14 /* ErrorType.swift */; };
 		A5397FFC2484E25A00F4EC14 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397FFA2484E25A00F4EC14 /* DatePickerViewController.xib */; };
 		A5397FFD2484E25A00F4EC14 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397FFB2484E25A00F4EC14 /* DatePickerViewController.swift */; };
+		A57B942024853E470030722E /* ScheduleOperationDateSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B941F24853E470030722E /* ScheduleOperationDateSelectorCell.swift */; };
+		A57B942224853E510030722E /* ScheduleOperationDateSelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57B942124853E510030722E /* ScheduleOperationDateSelectorCell.xib */; };
+		A57B942424853E5B0030722E /* ScheduleOperationDateSelectorCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B942324853E5B0030722E /* ScheduleOperationDateSelectorCellModel.swift */; };
 		A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79C2383DF4A003BCF7E /* AppDelegate.swift */; };
 		A580B79F2383DF4A003BCF7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */; };
 		A580B7A42383DF4A003BCF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580B7A22383DF4A003BCF7E /* Main.storyboard */; };
@@ -237,6 +240,9 @@
 		A5397FF72484558300F4EC14 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		A5397FFA2484E25A00F4EC14 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 		A5397FFB2484E25A00F4EC14 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		A57B941F24853E470030722E /* ScheduleOperationDateSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationDateSelectorCell.swift; sourceTree = "<group>"; };
+		A57B942124853E510030722E /* ScheduleOperationDateSelectorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleOperationDateSelectorCell.xib; sourceTree = "<group>"; };
+		A57B942324853E5B0030722E /* ScheduleOperationDateSelectorCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOperationDateSelectorCellModel.swift; sourceTree = "<group>"; };
 		A580B7992383DF4A003BCF7E /* MobileHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580B79C2383DF4A003BCF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A580B79E2383DF4A003BCF7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -408,6 +414,8 @@
 			children = (
 				A5032F4523D850DB0032BC93 /* ScheduleOperationCell.swift */,
 				A5032F4723D850F30032BC93 /* ScheduleOperationCell.xib */,
+				A57B941F24853E470030722E /* ScheduleOperationDateSelectorCell.swift */,
+				A57B942124853E510030722E /* ScheduleOperationDateSelectorCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -416,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				A5032F4923D850FB0032BC93 /* ScheduleOperationCellModel.swift */,
+				A57B942324853E5B0030722E /* ScheduleOperationDateSelectorCellModel.swift */,
 			);
 			path = CellModels;
 			sourceTree = "<group>";
@@ -1035,6 +1044,7 @@
 				A580B7A92383DF4F003BCF7E /* LaunchScreen.storyboard in Resources */,
 				A5DFFAFD23D6E77F00B630B6 /* SinglePatientInfoCell.xib in Resources */,
 				A50355602386B10A00FDAE12 /* Authorization.storyboard in Resources */,
+				A57B942224853E510030722E /* ScheduleOperationDateSelectorCell.xib in Resources */,
 				A5B8CF6A23CCE6C70054C2B3 /* ActionCell.xib in Resources */,
 				A5032F5C23D883BA0032BC93 /* DischargePatientCell.xib in Resources */,
 				A58BE9BA239A64E7008FC44B /* Cloud-Bold.otf in Resources */,
@@ -1213,6 +1223,7 @@
 				A5032EFE23D785AA0032BC93 /* FirebaseStorageInteractor.swift in Sources */,
 				A5DFFAFF23D6EE5600B630B6 /* AddPatientViewController.swift in Sources */,
 				A5032F4223D84C010032BC93 /* ScheduleOperationView.swift in Sources */,
+				A57B942424853E5B0030722E /* ScheduleOperationDateSelectorCellModel.swift in Sources */,
 				A5032F3A23D84BD90032BC93 /* ScheduleOperationViewController.swift in Sources */,
 				A503553023869C1E00FDAE12 /* MainScreenRouter.swift in Sources */,
 				A503553323869D1600FDAE12 /* SessionData.swift in Sources */,
@@ -1247,6 +1258,7 @@
 				A50355512386A4E300FDAE12 /* EventBus.swift in Sources */,
 				A5032F3C23D84BE40032BC93 /* ScheduleOperationPresenter.swift in Sources */,
 				A58BE9B223993749008FC44B /* ActionsViewController.swift in Sources */,
+				A57B942024853E470030722E /* ScheduleOperationDateSelectorCell.swift in Sources */,
 				A580B79D2383DF4A003BCF7E /* AppDelegate.swift in Sources */,
 				A5C8D0A923C63A0500F33B62 /* UserDefaultsInteractor.swift in Sources */,
 				A5B8CF7E23CDC1C00054C2B3 /* PatientCellModel.swift in Sources */,
