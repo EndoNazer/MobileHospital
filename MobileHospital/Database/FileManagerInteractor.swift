@@ -34,7 +34,7 @@ class FileManagerInteractor {
     
     static func writeToFile(url: URL, text: String) {
         do {
-            try text.write(to: url, atomically: false, encoding: .utf8)
+            try text.write(to: url, atomically: false, encoding: .unicode)
         }
         catch {
             print("Error in writing")
@@ -43,7 +43,7 @@ class FileManagerInteractor {
     
     static func readFile(url: URL) {
         do {
-            let getText = try String(contentsOf: url, encoding: .utf8)
+            let getText = try String(contentsOf: url, encoding: .unicode)
             print(getText)
         }
         catch {

@@ -45,3 +45,4 @@ extension PhotoCell: TableCellConfigurable {
     }
     
 }
+
